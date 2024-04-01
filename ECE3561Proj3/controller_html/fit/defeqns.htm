@@ -1,0 +1,257 @@
+<html><head><link type='text/css' href='style.css' rel='stylesheet'></head><body class='pgBgnd'>
+<h3 align='center'>Equations</h3>
+<table width='90%' align='center' border='1' cellpadding='0' cellspacing='0'>
+<tr><td>
+</td></tr><tr><td>
+********** Mapped Logic **********
+</td></tr><tr><td>
+FDCPE_ACC8: FDCPE port map (ACC(8),ACC_D(8),CLK,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ACC_D(8) <= ((NOT State(3) AND State(0) AND M(1) AND M(2) AND M(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	R(1).PIN AND R(8).PIN AND R(5).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND State(0) AND M(1) AND M(2) AND M(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	R(1).PIN AND R(7).PIN AND R(5).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND State(0) AND M(1) AND M(2) AND R(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	R(7).PIN AND R(8).PIN AND R(5).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND State(0) AND M(1) AND M(3) AND R(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	R(6).PIN AND R(8).PIN AND R(5).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND State(0) AND M(1) AND M(4) AND R(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	R(6).PIN AND R(7).PIN AND R(5).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (State(0).EXP)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND State(0) AND M(2) AND M(3) AND M(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	R(1).PIN AND R(6).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND State(0) AND M(2) AND M(3) AND R(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	R(6).PIN AND R(8).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND State(0) AND M(2) AND M(4) AND R(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	R(6).PIN AND R(7).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND State(0) AND M(2) AND R(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	R(6).PIN AND R(7).PIN AND R(8).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND State(0) AND M(1) AND R(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	R(6).PIN AND R(7).PIN AND R(8).PIN AND R(5).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (State(3) AND State(0) AND NOT State(1) AND NOT State(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	ACC(8))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND State(0) AND M(4) AND R(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	R(8).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT ST AND NOT State(3) AND NOT State(0) AND NOT State(1) AND NOT State(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	ACC(8))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND State(0) AND M(3) AND M(4) AND R(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	R(7).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND State(0) AND M(3) AND R(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	R(7).PIN AND R(8).PIN));
+</td></tr><tr><td>
+</td></tr><tr><td>
+DONE <= (State(3) AND State(0) AND NOT State(1) AND NOT State(2));
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+Madd_ACC_8_4_add0000_Mxor_Result(3)__xor0000/Madd_ACC_8_4_add0000_Mxor_Result(3)__xor0000_D <= R(8).PIN
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	 XOR 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Madd_ACC_8_4_add0000_Mxor_Result(3)__xor0000/Madd_ACC_8_4_add0000_Mxor_Result(3)__xor0000_D <= M(4);
+</td></tr><tr><td>
+FDCPE_R1: FDCPE port map (R(1),R_D(1),CLK,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;R_D(1) <= ((State(0) AND NOT State(1) AND NOT State(2) AND R(1).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT ST AND NOT State(3) AND NOT State(1) AND NOT State(2) AND R(1).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (State(3) AND NOT State(0) AND NOT State(1) AND NOT State(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	R(2).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (ST AND NOT State(3) AND NOT State(0) AND NOT State(1) AND NOT State(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND State(0) AND R(1).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND State(0) AND R(2).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND State(1) AND R(2).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND State(2) AND R(2).PIN));
+</td></tr><tr><td>
+FDCPE_R2: FDCPE port map (R(2),R_D(2),CLK,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;R_D(2) <= ((EXP11_.EXP)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND State(0) AND R(1).PIN AND R(2).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND State(0) AND NOT R(1).PIN AND R(3).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND NOT State(0) AND State(1) AND R(3).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND NOT State(0) AND State(2) AND R(3).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (State(3) AND State(0) AND NOT State(1) AND NOT State(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	R(2).PIN));
+</td></tr><tr><td>
+FDCPE_R3: FDCPE port map (R(3),R_D(3),CLK,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;R_D(3) <= ((State(3) AND NOT State(0) AND NOT State(1) AND NOT State(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	R(4).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (ST AND NOT State(3) AND NOT State(0) AND NOT State(1) AND NOT State(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT ST AND NOT State(3) AND NOT State(0) AND NOT State(1) AND NOT State(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	R(3).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND State(0) AND R(1).PIN AND R(3).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND State(0) AND NOT R(1).PIN AND R(4).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND NOT State(0) AND State(1) AND R(4).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND NOT State(0) AND State(2) AND R(4).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (State(3) AND State(0) AND NOT State(1) AND NOT State(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	R(3).PIN));
+</td></tr><tr><td>
+FDCPE_R4: FDCPE port map (R(4),R_D(4),CLK,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;R_D(4) <= ((State(3) AND NOT State(0) AND NOT State(1) AND NOT State(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	R(5).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT ST AND NOT State(3) AND NOT State(0) AND NOT State(1) AND NOT State(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	R(4).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (ST AND NOT State(3) AND NOT State(0) AND NOT State(1) AND NOT State(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND State(0) AND R(1).PIN AND R(4).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND State(0) AND NOT R(1).PIN AND R(5).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND NOT State(0) AND State(1) AND R(5).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND NOT State(0) AND State(2) AND R(5).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (State(3) AND State(0) AND NOT State(1) AND NOT State(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	R(4).PIN));
+</td></tr><tr><td>
+FDCPE_R5: FDCPE port map (R(5),R_D(5),CLK,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;R_D(5) <= ((State(3) AND NOT State(0) AND NOT State(1) AND NOT State(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	R(6).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND State(0) AND NOT M(1) AND R(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	R(5).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT ST AND NOT State(3) AND NOT State(0) AND NOT State(1) AND NOT State(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	R(5).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND State(0) AND NOT R(1).PIN AND R(6).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND NOT State(0) AND State(1) AND R(6).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND NOT State(0) AND State(2) AND R(6).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (State(3) AND State(0) AND NOT State(1) AND NOT State(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	R(5).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND State(0) AND M(1) AND R(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT R(5).PIN));
+</td></tr><tr><td>
+FDCPE_R6: FDCPE port map (R(6),R_D(6),CLK,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;R_D(6) <= ((NOT State(3) AND State(0) AND NOT M(1) AND M(2) AND R(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT R(6).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND State(0) AND NOT M(1) AND NOT M(2) AND R(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	R(6).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND State(0) AND M(2) AND R(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT R(6).PIN AND NOT R(5).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND State(0) AND NOT M(2) AND R(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	R(6).PIN AND NOT R(5).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT ST AND NOT State(3) AND NOT State(0) AND NOT State(1) AND NOT State(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	R(6).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND State(0) AND M(1) AND M(2) AND R(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	R(6).PIN AND R(5).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND State(0) AND M(1) AND NOT M(2) AND R(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT R(6).PIN AND R(5).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND State(0) AND NOT R(1).PIN AND R(7).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND NOT State(0) AND State(1) AND R(7).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND NOT State(0) AND State(2) AND R(7).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (State(3) AND State(0) AND NOT State(1) AND NOT State(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	R(6).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (State(3) AND NOT State(0) AND NOT State(1) AND NOT State(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	R(7).PIN));
+</td></tr><tr><td>
+FTCPE_R7: FTCPE port map (R(7),R_T(7),CLK,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;R_T(7) <= ((EXP3_.EXP)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (State(3) AND State(1) AND R(7).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (State(3) AND State(2) AND R(7).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND State(0) AND NOT M(1) AND M(3) AND R(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT R(6).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND State(0) AND M(2) AND NOT M(3) AND R(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	R(6).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND State(0) AND NOT M(2) AND M(3) AND R(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT R(6).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (EXP6_.EXP)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (State(3) AND NOT State(0) AND R(7).PIN AND NOT R(8).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(0) AND State(1) AND R(7).PIN AND NOT R(8).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(0) AND State(2) AND R(7).PIN AND NOT R(8).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND State(0) AND NOT R(1).PIN AND R(7).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT R(8).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND State(0) AND NOT R(1).PIN AND NOT R(7).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	R(8).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND State(0) AND NOT M(1) AND NOT M(2) AND M(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	R(1).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND State(0) AND NOT M(2) AND M(3) AND R(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT R(5).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND State(0) AND M(3) AND R(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT R(6).PIN AND NOT R(5).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND State(0) AND M(1) AND M(2) AND NOT M(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	R(1).PIN AND R(5).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND State(0) AND M(1) AND NOT M(3) AND R(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	R(6).PIN AND R(5).PIN));
+</td></tr><tr><td>
+FDCPE_R8: FDCPE port map (R(8),R_D(8),CLK,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;R_D(8) <= ((EXP9_.EXP)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT ST AND NOT State(3) AND NOT State(0) AND NOT State(1) AND NOT State(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	R(8).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND State(0) AND M(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT Madd_ACC_8_4_add0000_Mxor_Result(3)__xor0000/Madd_ACC_8_4_add0000_Mxor_Result(3)__xor0000_D AND R(1).PIN AND R(7).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND State(0) AND NOT M(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Madd_ACC_8_4_add0000_Mxor_Result(3)__xor0000/Madd_ACC_8_4_add0000_Mxor_Result(3)__xor0000_D AND R(1).PIN AND NOT R(7).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND State(0) AND NOT M(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Madd_ACC_8_4_add0000_Mxor_Result(3)__xor0000/Madd_ACC_8_4_add0000_Mxor_Result(3)__xor0000_D AND R(1).PIN AND NOT R(6).PIN AND NOT R(7).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND State(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Madd_ACC_8_4_add0000_Mxor_Result(3)__xor0000/Madd_ACC_8_4_add0000_Mxor_Result(3)__xor0000_D AND R(1).PIN AND NOT R(6).PIN AND NOT R(7).PIN AND NOT R(5).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (EXP2_.EXP)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND State(0) AND NOT M(1) AND NOT M(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Madd_ACC_8_4_add0000_Mxor_Result(3)__xor0000/Madd_ACC_8_4_add0000_Mxor_Result(3)__xor0000_D AND R(1).PIN AND NOT R(7).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND State(0) AND NOT M(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Madd_ACC_8_4_add0000_Mxor_Result(3)__xor0000/Madd_ACC_8_4_add0000_Mxor_Result(3)__xor0000_D AND R(1).PIN AND NOT R(6).PIN AND NOT R(7).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND State(0) AND NOT M(2) AND NOT M(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Madd_ACC_8_4_add0000_Mxor_Result(3)__xor0000/Madd_ACC_8_4_add0000_Mxor_Result(3)__xor0000_D AND R(1).PIN AND NOT R(6).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND State(0) AND NOT M(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Madd_ACC_8_4_add0000_Mxor_Result(3)__xor0000/Madd_ACC_8_4_add0000_Mxor_Result(3)__xor0000_D AND R(1).PIN AND NOT R(7).PIN AND NOT R(5).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND State(0) AND NOT M(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Madd_ACC_8_4_add0000_Mxor_Result(3)__xor0000/Madd_ACC_8_4_add0000_Mxor_Result(3)__xor0000_D AND R(1).PIN AND NOT R(6).PIN AND NOT R(5).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND State(0) AND ACC(8) AND NOT R(1).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND NOT State(0) AND State(1) AND ACC(8))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND NOT State(0) AND State(2) AND ACC(8))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (State(3) AND State(0) AND NOT State(1) AND NOT State(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	R(8).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (State(3) AND NOT State(0) AND NOT State(1) AND NOT State(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	ACC(8)));
+</td></tr><tr><td>
+FTCPE_State0: FTCPE port map (State(0),State_T(0),CLK,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;State_T(0) <= ((NOT ST AND NOT State(3) AND NOT State(0) AND NOT State(1) AND NOT State(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (State(3) AND NOT State(0) AND State(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (State(3) AND NOT State(0) AND State(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND State(0) AND NOT R(1).PIN));
+</td></tr><tr><td>
+FDCPE_State1: FDCPE port map (State(1),State_D(1),CLK,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;State_D(1) <= ((NOT State(3) AND State(0) AND NOT State(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND NOT State(0) AND State(1)));
+</td></tr><tr><td>
+FTCPE_State2: FTCPE port map (State(2),State_T(2),CLK,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;State_T(2) <= ((State(3) AND State(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND State(0) AND State(1)));
+</td></tr><tr><td>
+FDCPE_State3: FDCPE port map (State(3),State_D(3),CLK,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;State_D(3) <= ((State(3) AND NOT State(0) AND NOT State(1) AND NOT State(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT State(3) AND State(0) AND State(1) AND State(2)));
+</td></tr><tr><td>
+Register Legend:
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FDCPE (Q,D,C,CLR,PRE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FTCPE (Q,D,C,CLR,PRE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LDCP  (Q,D,G,CLR,PRE); 
+</td></tr><tr><td>
+</td></tr>
+</table>
+<form><span class="pgRef"><table width="90%" align="center"><tr>
+<td align="left"><input type="button" onclick="javascript:parent.leftnav.showTop()" onmouseover="window.status='goto top of page'; return true;" onmouseout="window.status=''" value="back to top"></td>
+<td align="right"><input type="button" onclick="window.print()" onmouseover="window.status='print page'; return true;" onmouseout="window.status=''" value="print page"></td>
+</tr></table></span></form>
+</body></html>

@@ -1,0 +1,734 @@
+MDF Database:  version 1.0
+MDF_INFO | controller | XC9536-5-PC44
+MACROCELL | 1 | 14 | ACC<0>
+ATTRIBUTES | 8815362 | 0
+OUTPUTMC | 1 | 1 | 15
+INPUTS | 8 | State<3>  | State<0>  | R<2>.PIN  | State<1>  | State<2>  | ST  | State<1>.EXP  | R<1>.PIN
+INPUTMC | 5 | 1 | 8 | 1 | 15 | 1 | 13 | 1 | 10 | 1 | 13
+INPUTP | 3 | 1 | 37 | 27
+EXPORTS | 1 | 1 | 15
+IMPORTS | 1 | 1 | 13
+EQ | 13 | 
+   R<1>.D = !State<3> & State<0> & R<1>.PIN
+	# !State<3> & State<0> & R<2>.PIN
+	# !State<3> & State<1> & R<2>.PIN
+	# !State<3> & State<2> & R<2>.PIN
+;Imported pterms FB2_14
+	# State<0> & !State<1> & !State<2> & R<1>.PIN
+	# !ST & !State<3> & !State<1> & !State<2> & R<1>.PIN
+	# State<3> & !State<0> & !State<1> & !State<2> & 
+	R<2>.PIN
+	# ST & !State<3> & !State<0> & !State<1> & !State<2> & 
+	N<1>;
+   R<1>.CLK = CLK;	// GCK
+    ACC<0>.EXP  =  !ST & !State<3> & !State<0> & !State<1> & !State<2>
+GLOBALS | 1 | 2 | CLK
+
+MACROCELL | 0 | 13 | ACC<5>
+ATTRIBUTES | 8815362 | 0
+INPUTS | 9 | R<6>.PIN  | State<3>  | State<0>  | State<1>  | State<2>  | R<7>.PIN  | EXP7_.EXP  | EXP8_.EXP  | R<1>.PIN
+INPUTMC | 6 | 1 | 8 | 1 | 15 | 1 | 13 | 1 | 10 | 0 | 12 | 0 | 14
+INPUTP | 3 | 19 | 9 | 27
+IMPORTS | 2 | 0 | 12 | 0 | 14
+EQ | 24 | 
+   R<6>.D = !State<3> & State<0> & !R<1>.PIN & R<7>.PIN
+	# !State<3> & !State<0> & State<1> & R<7>.PIN
+	# !State<3> & !State<0> & State<2> & R<7>.PIN
+	# State<3> & State<0> & !State<1> & !State<2> & 
+	R<6>.PIN
+	# State<3> & !State<0> & !State<1> & !State<2> & 
+	R<7>.PIN
+;Imported pterms FB1_13
+	# !State<3> & State<0> & !M<1> & M<2> & R<1>.PIN & 
+	!R<6>.PIN
+	# !State<3> & State<0> & !M<1> & !M<2> & R<1>.PIN & 
+	R<6>.PIN
+	# !State<3> & State<0> & M<2> & R<1>.PIN & 
+	!R<6>.PIN & !R<5>.PIN
+	# !State<3> & State<0> & !M<2> & R<1>.PIN & 
+	R<6>.PIN & !R<5>.PIN
+;Imported pterms FB1_15
+	# !ST & !State<3> & !State<0> & !State<1> & !State<2> & 
+	R<6>.PIN
+	# !State<3> & State<0> & M<1> & M<2> & R<1>.PIN & 
+	R<6>.PIN & R<5>.PIN
+	# !State<3> & State<0> & M<1> & !M<2> & R<1>.PIN & 
+	!R<6>.PIN & R<5>.PIN;
+   R<6>.CLK = CLK;	// GCK
+GLOBALS | 1 | 2 | CLK
+
+MACROCELL | 0 | 7 | ACC<6>
+ATTRIBUTES | 4621058 | 0
+INPUTS | 10 | R<6>.PIN  | R<5>.PIN  | State<3>  | State<0>  | M<1>  | M<3>  | M<2>  | EXP4_.EXP  | EXP5_.EXP  | R<1>.PIN
+INPUTMC | 4 | 1 | 8 | 1 | 15 | 0 | 6 | 0 | 8
+INPUTP | 6 | 19 | 35 | 11 | 12 | 8 | 27
+IMPORTS | 2 | 0 | 6 | 0 | 8
+EQ | 38 | 
+   R<7>.T = !State<3> & State<0> & !M<1> & !M<2> & M<3> & 
+	R<1>.PIN
+	# !State<3> & State<0> & !M<2> & M<3> & R<1>.PIN & 
+	!R<5>.PIN
+	# !State<3> & State<0> & M<3> & R<1>.PIN & 
+	!R<6>.PIN & !R<5>.PIN
+	# !State<3> & State<0> & M<1> & M<2> & !M<3> & 
+	R<1>.PIN & R<5>.PIN
+	# !State<3> & State<0> & M<1> & !M<3> & R<1>.PIN & 
+	R<6>.PIN & R<5>.PIN
+;Imported pterms FB1_7
+	# State<3> & State<1> & R<7>.PIN
+	# State<3> & State<2> & R<7>.PIN
+	# !State<3> & State<0> & !M<1> & M<3> & R<1>.PIN & 
+	!R<6>.PIN
+	# !State<3> & State<0> & M<2> & !M<3> & R<1>.PIN & 
+	R<6>.PIN
+	# !State<3> & State<0> & !M<2> & M<3> & R<1>.PIN & 
+	!R<6>.PIN
+;Imported pterms FB1_6
+	# !State<3> & !State<0> & State<1> & !R<7>.PIN & 
+	R<8>.PIN
+	# !State<3> & !State<0> & State<2> & !R<7>.PIN & 
+	R<8>.PIN
+;Imported pterms FB1_9
+	# State<3> & !State<0> & R<7>.PIN & !R<8>.PIN
+	# !State<0> & State<1> & R<7>.PIN & !R<8>.PIN
+	# !State<0> & State<2> & R<7>.PIN & !R<8>.PIN
+	# !State<3> & State<0> & !R<1>.PIN & R<7>.PIN & 
+	!R<8>.PIN
+	# !State<3> & State<0> & !R<1>.PIN & !R<7>.PIN & 
+	R<8>.PIN
+;Imported pterms FB1_10
+	# ST & !State<3> & !State<0> & !State<1> & !State<2> & 
+	R<7>.PIN
+	# State<3> & !State<0> & !State<1> & !State<2> & 
+	!R<7>.PIN & R<8>.PIN;
+   R<7>.CLK = CLK;	// GCK
+GLOBALS | 1 | 2 | CLK
+
+MACROCELL | 0 | 1 | ACC<7>
+ATTRIBUTES | 8815362 | 0
+INPUTS | 9 | R<8>.PIN  | State<3>  | State<0>  | ACC<8>  | State<1>  | State<2>  | EXP0_.EXP  | EXP1_.EXP  | R<1>.PIN
+INPUTMC | 7 | 1 | 8 | 1 | 15 | 1 | 17 | 1 | 13 | 1 | 10 | 0 | 0 | 0 | 2
+INPUTP | 2 | 3 | 27
+IMPORTS | 2 | 0 | 0 | 0 | 2
+EQ | 50 | 
+   R<8>.D = !State<3> & State<0> & ACC<8> & !R<1>.PIN
+	# !State<3> & !State<0> & State<1> & ACC<8>
+	# !State<3> & !State<0> & State<2> & ACC<8>
+	# State<3> & State<0> & !State<1> & !State<2> & 
+	R<8>.PIN
+	# State<3> & !State<0> & !State<1> & !State<2> & 
+	ACC<8>
+;Imported pterms FB1_1
+	# !ST & !State<3> & !State<0> & !State<1> & !State<2> & 
+	R<8>.PIN
+	# !State<3> & State<0> & M<3> & 
+	!Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D & R<1>.PIN & R<7>.PIN
+	# !State<3> & State<0> & !M<3> & 
+	Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D & R<1>.PIN & !R<7>.PIN
+	# !State<3> & State<0> & !M<2> & 
+	Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D & R<1>.PIN & !R<6>.PIN & !R<7>.PIN
+	# !State<3> & State<0> & 
+	Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D & R<1>.PIN & !R<6>.PIN & !R<7>.PIN & !R<5>.PIN
+;Imported pterms FB1_18
+	# !State<3> & State<0> & !M<1> & !M<2> & !M<3> & 
+	Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D & R<1>.PIN
+	# !State<3> & State<0> & !M<1> & !M<3> & 
+	Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D & R<1>.PIN & !R<6>.PIN
+	# !State<3> & State<0> & M<2> & 
+	!Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D & R<1>.PIN & R<6>.PIN & R<7>.PIN
+	# !State<3> & State<0> & !M<2> & !M<3> & 
+	Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D & R<1>.PIN & !R<5>.PIN
+;Imported pterms FB1_3
+	# !State<3> & State<0> & !M<1> & !M<2> & 
+	Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D & R<1>.PIN & !R<7>.PIN
+	# !State<3> & State<0> & !M<1> & 
+	Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D & R<1>.PIN & !R<6>.PIN & !R<7>.PIN
+	# !State<3> & State<0> & !M<2> & !M<3> & 
+	Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D & R<1>.PIN & !R<6>.PIN
+	# !State<3> & State<0> & !M<2> & 
+	Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D & R<1>.PIN & !R<7>.PIN & !R<5>.PIN
+	# !State<3> & State<0> & !M<3> & 
+	Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D & R<1>.PIN & !R<6>.PIN & !R<5>.PIN
+;Imported pterms FB1_4
+	# !State<3> & State<0> & M<2> & M<3> & 
+	!Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D & R<1>.PIN & R<6>.PIN
+	# !State<3> & State<0> & M<1> & M<2> & M<3> & 
+	!Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D & R<1>.PIN & R<5>.PIN
+	# !State<3> & State<0> & M<1> & M<2> & 
+	!Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D & R<1>.PIN & R<7>.PIN & R<5>.PIN
+	# !State<3> & State<0> & M<1> & M<3> & 
+	!Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D & R<1>.PIN & R<6>.PIN & R<5>.PIN
+	# !State<3> & State<0> & M<1> & 
+	!Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D & R<1>.PIN & R<6>.PIN & R<7>.PIN & R<5>.PIN;
+   R<8>.CLK = CLK;	// GCK
+GLOBALS | 1 | 2 | CLK
+
+MACROCELL | 1 | 9 | ACC<4>
+ATTRIBUTES | 8815362 | 0
+INPUTS | 10 | R<5>.PIN  | State<3>  | State<0>  | State<1>  | State<2>  | R<6>.PIN  | M<1>  | State<3>.EXP  | State<2>.EXP  | R<1>.PIN
+INPUTMC | 6 | 1 | 8 | 1 | 15 | 1 | 13 | 1 | 10 | 1 | 8 | 1 | 10
+INPUTP | 4 | 35 | 19 | 11 | 27
+IMPORTS | 2 | 1 | 8 | 1 | 10
+EQ | 16 | 
+   R<5>.D = !State<3> & State<0> & !R<1>.PIN & R<6>.PIN
+	# !State<3> & !State<0> & State<1> & R<6>.PIN
+	# !State<3> & !State<0> & State<2> & R<6>.PIN
+	# State<3> & State<0> & !State<1> & !State<2> & 
+	R<5>.PIN
+	# !State<3> & State<0> & M<1> & R<1>.PIN & 
+	!R<5>.PIN
+;Imported pterms FB2_9
+	# State<3> & !State<0> & !State<1> & !State<2> & 
+	R<6>.PIN
+	# !State<3> & State<0> & !M<1> & R<1>.PIN & 
+	R<5>.PIN
+;Imported pterms FB2_11
+	# !ST & !State<3> & !State<0> & !State<1> & !State<2> & 
+	R<5>.PIN;
+   R<5>.CLK = CLK;	// GCK
+GLOBALS | 1 | 2 | CLK
+
+MACROCELL | 1 | 0 | ACC<1>
+ATTRIBUTES | 8815362 | 0
+OUTPUTMC | 1 | 1 | 17
+INPUTS | 12 | R<6>.PIN  | R<7>.PIN  | R<8>.PIN  | State<3>  | State<0>  | M<1>  | M<4>  | R<5>.PIN  | M<3>  | M<2>  | EXP10_.EXP  | R<1>.PIN
+INPUTMC | 3 | 1 | 8 | 1 | 15 | 1 | 1
+INPUTP | 9 | 19 | 9 | 3 | 11 | 36 | 35 | 12 | 8 | 27
+EXPORTS | 1 | 1 | 17
+IMPORTS | 1 | 1 | 1
+EQ | 25 | 
+   R<2>.D = ;Imported pterms FB2_2
+	  !State<3> & State<0> & R<1>.PIN & R<2>.PIN
+	# !State<3> & State<0> & !R<1>.PIN & R<3>.PIN
+	# !State<3> & !State<0> & State<1> & R<3>.PIN
+	# !State<3> & !State<0> & State<2> & R<3>.PIN
+	# State<3> & State<0> & !State<1> & !State<2> & 
+	R<2>.PIN
+;Imported pterms FB2_3
+	# State<3> & !State<0> & !State<1> & !State<2> & 
+	R<3>.PIN
+	# ST & !State<3> & !State<0> & !State<1> & !State<2> & 
+	N<2>
+	# !ST & !State<3> & !State<0> & !State<1> & !State<2> & 
+	R<2>.PIN;
+   R<2>.CLK = CLK;	// GCK
+    ACC<1>.EXP  =  !State<3> & State<0> & M<1> & M<2> & M<3> & 
+	R<1>.PIN & R<8>.PIN & R<5>.PIN
+	# !State<3> & State<0> & M<1> & M<2> & M<4> & 
+	R<1>.PIN & R<7>.PIN & R<5>.PIN
+	# !State<3> & State<0> & M<1> & M<2> & R<1>.PIN & 
+	R<7>.PIN & R<8>.PIN & R<5>.PIN
+	# !State<3> & State<0> & M<1> & M<3> & R<1>.PIN & 
+	R<6>.PIN & R<8>.PIN & R<5>.PIN
+	# !State<3> & State<0> & M<1> & M<4> & R<1>.PIN & 
+	R<6>.PIN & R<7>.PIN & R<5>.PIN
+GLOBALS | 1 | 2 | CLK
+
+MACROCELL | 1 | 3 | ACC<2>
+ATTRIBUTES | 8815362 | 0
+INPUTS | 8 | State<3>  | State<0>  | State<1>  | State<2>  | R<3>.PIN  | R<4>.PIN  | EXP12_.EXP  | R<1>.PIN
+INPUTMC | 5 | 1 | 8 | 1 | 15 | 1 | 13 | 1 | 10 | 1 | 4
+INPUTP | 3 | 43 | 38 | 27
+IMPORTS | 1 | 1 | 4
+EQ | 14 | 
+   R<3>.D = !State<3> & State<0> & R<1>.PIN & R<3>.PIN
+	# !State<3> & State<0> & !R<1>.PIN & R<4>.PIN
+	# !State<3> & !State<0> & State<1> & R<4>.PIN
+	# !State<3> & !State<0> & State<2> & R<4>.PIN
+	# State<3> & State<0> & !State<1> & !State<2> & 
+	R<3>.PIN
+;Imported pterms FB2_5
+	# State<3> & !State<0> & !State<1> & !State<2> & 
+	R<4>.PIN
+	# ST & !State<3> & !State<0> & !State<1> & !State<2> & 
+	N<3>
+	# !ST & !State<3> & !State<0> & !State<1> & !State<2> & 
+	R<3>.PIN;
+   R<3>.CLK = CLK;	// GCK
+GLOBALS | 1 | 2 | CLK
+
+MACROCELL | 1 | 6 | ACC<3>
+ATTRIBUTES | 8815362 | 0
+INPUTS | 9 | R<4>.PIN  | State<3>  | State<0>  | State<1>  | State<2>  | R<5>.PIN  | EXP13_.EXP  | EXP14_.EXP  | R<1>.PIN
+INPUTMC | 6 | 1 | 8 | 1 | 15 | 1 | 13 | 1 | 10 | 1 | 5 | 1 | 7
+INPUTP | 3 | 38 | 35 | 27
+IMPORTS | 2 | 1 | 5 | 1 | 7
+EQ | 15 | 
+   R<4>.D = !State<3> & State<0> & R<1>.PIN & R<4>.PIN
+	# !State<3> & State<0> & !R<1>.PIN & R<5>.PIN
+	# !State<3> & !State<0> & State<1> & R<5>.PIN
+	# !State<3> & !State<0> & State<2> & R<5>.PIN
+	# State<3> & State<0> & !State<1> & !State<2> & 
+	R<4>.PIN
+;Imported pterms FB2_6
+	# State<3> & !State<0> & !State<1> & !State<2> & 
+	R<5>.PIN
+	# !ST & !State<3> & !State<0> & !State<1> & !State<2> & 
+	R<4>.PIN
+;Imported pterms FB2_8
+	# ST & !State<3> & !State<0> & !State<1> & !State<2> & 
+	N<4>;
+   R<4>.CLK = CLK;	// GCK
+GLOBALS | 1 | 2 | CLK
+
+MACROCELL | 1 | 8 | State<3>
+ATTRIBUTES | 8553216 | 0
+OUTPUTMC | 31 | 1 | 14 | 0 | 13 | 0 | 7 | 0 | 1 | 1 | 9 | 0 | 17 | 1 | 3 | 1 | 6 | 1 | 8 | 1 | 15 | 1 | 13 | 1 | 10 | 1 | 17 | 1 | 11 | 0 | 0 | 0 | 2 | 0 | 3 | 0 | 5 | 0 | 6 | 0 | 8 | 0 | 9 | 0 | 12 | 0 | 14 | 1 | 0 | 1 | 1 | 1 | 2 | 1 | 4 | 1 | 5 | 1 | 7 | 1 | 12 | 1 | 16
+INPUTS | 8 | State<3>  | State<0>  | State<1>  | State<2>  | R<6>.PIN  | M<1>  | R<5>.PIN  | R<1>.PIN
+INPUTMC | 4 | 1 | 8 | 1 | 15 | 1 | 13 | 1 | 10
+INPUTP | 4 | 19 | 11 | 35 | 27
+EXPORTS | 1 | 1 | 9
+EQ | 7 | 
+   State<3>.D = State<3> & !State<0> & !State<1> & !State<2>
+	# !State<3> & State<0> & State<1> & State<2>;
+   State<3>.CLK = CLK;	// GCK
+    State<3>.EXP  =  State<3> & !State<0> & !State<1> & !State<2> & 
+	R<6>.PIN
+	# !State<3> & State<0> & !M<1> & R<1>.PIN & 
+	R<5>.PIN
+GLOBALS | 1 | 2 | CLK
+
+MACROCELL | 1 | 15 | State<0>
+ATTRIBUTES | 4358912 | 0
+OUTPUTMC | 31 | 1 | 14 | 0 | 13 | 0 | 7 | 0 | 1 | 1 | 9 | 0 | 17 | 1 | 3 | 1 | 6 | 1 | 8 | 1 | 15 | 1 | 13 | 1 | 10 | 1 | 17 | 1 | 11 | 0 | 0 | 0 | 2 | 0 | 3 | 0 | 5 | 0 | 6 | 0 | 8 | 0 | 9 | 0 | 12 | 0 | 14 | 1 | 0 | 1 | 1 | 1 | 2 | 1 | 4 | 1 | 5 | 1 | 7 | 1 | 12 | 1 | 16
+INPUTS | 12 | State<3>  | State<0>  | State<1>  | State<2>  | R<6>.PIN  | R<5>.PIN  | M<1>  | M<3>  | M<4>  | M<2>  | ACC<0>.EXP  | R<1>.PIN
+INPUTMC | 5 | 1 | 8 | 1 | 15 | 1 | 13 | 1 | 10 | 1 | 14
+INPUTP | 7 | 19 | 35 | 11 | 12 | 36 | 8 | 27
+EXPORTS | 1 | 1 | 16
+IMPORTS | 1 | 1 | 14
+EQ | 10 | 
+   !State<0>.T = State<3> & !State<0> & State<1>
+	# State<3> & !State<0> & State<2>
+	# !State<3> & State<0> & !R<1>.PIN
+;Imported pterms FB2_15
+	# !ST & !State<3> & !State<0> & !State<1> & !State<2>;
+   State<0>.CLK = CLK;	// GCK
+    State<0>.EXP  =  !State<3> & State<0> & M<1> & M<2> & M<3> & 
+	M<4> & R<1>.PIN & R<5>.PIN
+	# !State<3> & State<0> & M<1> & M<3> & M<4> & 
+	R<1>.PIN & R<6>.PIN & R<5>.PIN
+GLOBALS | 1 | 2 | CLK
+
+MACROCELL | 1 | 13 | State<1>
+ATTRIBUTES | 8553216 | 0
+OUTPUTMC | 24 | 1 | 14 | 0 | 13 | 0 | 6 | 0 | 1 | 1 | 9 | 0 | 14 | 1 | 3 | 1 | 6 | 1 | 8 | 1 | 15 | 1 | 13 | 1 | 10 | 1 | 17 | 1 | 11 | 0 | 0 | 0 | 5 | 0 | 8 | 0 | 9 | 1 | 1 | 1 | 2 | 1 | 4 | 1 | 5 | 1 | 7 | 1 | 12
+INPUTS | 9 | State<3>  | State<0>  | State<1>  | R<2>.PIN  | State<2>  | ST  | N<1>  | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D.EXP  | R<1>.PIN
+INPUTMC | 5 | 1 | 8 | 1 | 15 | 1 | 13 | 1 | 10 | 1 | 12
+INPUTP | 4 | 1 | 37 | 29 | 27
+EXPORTS | 1 | 1 | 14
+IMPORTS | 1 | 1 | 12
+EQ | 10 | 
+   State<1>.D = !State<3> & !State<0> & State<1>
+;Imported pterms FB2_13
+	# !State<3> & State<0> & !State<1>;
+   State<1>.CLK = CLK;	// GCK
+    State<1>.EXP  =  State<0> & !State<1> & !State<2> & R<1>.PIN
+	# !ST & !State<3> & !State<1> & !State<2> & R<1>.PIN
+	# State<3> & !State<0> & !State<1> & !State<2> & 
+	R<2>.PIN
+	# ST & !State<3> & !State<0> & !State<1> & !State<2> & 
+	N<1>
+GLOBALS | 1 | 2 | CLK
+
+MACROCELL | 1 | 10 | State<2>
+ATTRIBUTES | 4358912 | 0
+OUTPUTMC | 23 | 1 | 14 | 0 | 13 | 0 | 6 | 0 | 1 | 1 | 9 | 0 | 14 | 1 | 3 | 1 | 6 | 1 | 8 | 1 | 15 | 1 | 10 | 1 | 17 | 1 | 11 | 0 | 0 | 0 | 5 | 0 | 8 | 0 | 9 | 1 | 1 | 1 | 2 | 1 | 4 | 1 | 5 | 1 | 7 | 1 | 13
+INPUTS | 6 | State<3>  | State<0>  | State<1>  | State<2>  | ST  | R<5>.PIN
+INPUTMC | 4 | 1 | 8 | 1 | 15 | 1 | 13 | 1 | 10
+INPUTP | 2 | 37 | 35
+EXPORTS | 1 | 1 | 9
+EQ | 5 | 
+   State<2>.T = State<3> & State<2>
+	# !State<3> & State<0> & State<1>;
+   State<2>.CLK = CLK;	// GCK
+    State<2>.EXP  =  !ST & !State<3> & !State<0> & !State<1> & !State<2> & 
+	R<5>.PIN
+GLOBALS | 1 | 2 | CLK
+
+MACROCELL | 1 | 17 | ACC<8>
+ATTRIBUTES | 8553216 | 0
+OUTPUTMC | 2 | 0 | 1 | 1 | 17
+INPUTS | 13 | R<7>.PIN  | State<3>  | State<0>  | M<4>  | State<1>  | State<2>  | ACC<8>  | R<8>.PIN  | M<3>  | ST  | ACC<1>.EXP  | EXP15_.EXP  | R<1>.PIN
+INPUTMC | 7 | 1 | 8 | 1 | 15 | 1 | 13 | 1 | 10 | 1 | 17 | 1 | 0 | 1 | 16
+INPUTP | 6 | 9 | 36 | 3 | 12 | 37 | 27
+IMPORTS | 2 | 1 | 0 | 1 | 16
+EQ | 38 | 
+   ACC<8>.D = State<3> & State<0> & !State<1> & !State<2> & 
+	ACC<8>
+	# !State<3> & State<0> & M<4> & R<1>.PIN & 
+	R<8>.PIN
+	# !ST & !State<3> & !State<0> & !State<1> & !State<2> & 
+	ACC<8>
+	# !State<3> & State<0> & M<3> & M<4> & R<1>.PIN & 
+	R<7>.PIN
+	# !State<3> & State<0> & M<3> & R<1>.PIN & 
+	R<7>.PIN & R<8>.PIN
+;Imported pterms FB2_1
+	# !State<3> & State<0> & M<1> & M<2> & M<3> & 
+	R<1>.PIN & R<8>.PIN & R<5>.PIN
+	# !State<3> & State<0> & M<1> & M<2> & M<4> & 
+	R<1>.PIN & R<7>.PIN & R<5>.PIN
+	# !State<3> & State<0> & M<1> & M<2> & R<1>.PIN & 
+	R<7>.PIN & R<8>.PIN & R<5>.PIN
+	# !State<3> & State<0> & M<1> & M<3> & R<1>.PIN & 
+	R<6>.PIN & R<8>.PIN & R<5>.PIN
+	# !State<3> & State<0> & M<1> & M<4> & R<1>.PIN & 
+	R<6>.PIN & R<7>.PIN & R<5>.PIN
+;Imported pterms FB2_17
+	# !State<3> & State<0> & M<2> & M<3> & M<4> & 
+	R<1>.PIN & R<6>.PIN
+	# !State<3> & State<0> & M<2> & M<3> & R<1>.PIN & 
+	R<6>.PIN & R<8>.PIN
+	# !State<3> & State<0> & M<2> & M<4> & R<1>.PIN & 
+	R<6>.PIN & R<7>.PIN
+	# !State<3> & State<0> & M<2> & R<1>.PIN & 
+	R<6>.PIN & R<7>.PIN & R<8>.PIN
+	# !State<3> & State<0> & M<1> & R<1>.PIN & 
+	R<6>.PIN & R<7>.PIN & R<8>.PIN & R<5>.PIN
+;Imported pterms FB2_16
+	# !State<3> & State<0> & M<1> & M<2> & M<3> & 
+	M<4> & R<1>.PIN & R<5>.PIN
+	# !State<3> & State<0> & M<1> & M<3> & M<4> & 
+	R<1>.PIN & R<6>.PIN & R<5>.PIN;
+   ACC<8>.CLK = CLK;	// GCK
+GLOBALS | 1 | 2 | CLK
+
+MACROCELL | 1 | 11 | DONE_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 4 | State<3>  | State<0>  | State<1>  | State<2>
+INPUTMC | 4 | 1 | 8 | 1 | 15 | 1 | 13 | 1 | 10
+EQ | 1 | 
+   DONE = State<3> & State<0> & !State<1> & !State<2>;
+
+MACROCELL | 1 | 12 | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 5 | 0 | 0 | 0 | 2 | 0 | 3 | 0 | 17 | 1 | 13
+INPUTS | 5 | M<4>  | State<3>  | State<0>  | State<1>  | R<8>.PIN
+INPUTMC | 3 | 1 | 8 | 1 | 15 | 1 | 13
+INPUTP | 2 | 36 | 3
+EXPORTS | 1 | 1 | 13
+EQ | 3 | 
+   Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D = R<8>.PIN
+	$ M<4>;
+    Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D.EXP  =  !State<3> & State<0> & !State<1>
+
+MACROCELL | 0 | 0 | EXP0_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 0 | 1
+INPUTS | 14 | ST  | R<5>.PIN  | State<3>  | State<0>  | State<1>  | State<2>  | R<6>.PIN  | R<8>.PIN  | M<3>  | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D  | R<7>.PIN  | M<2>  | EXP9_.EXP  | R<1>.PIN
+INPUTMC | 6 | 1 | 8 | 1 | 15 | 1 | 13 | 1 | 10 | 1 | 12 | 0 | 17
+INPUTP | 8 | 37 | 35 | 19 | 3 | 12 | 9 | 8 | 27
+EXPORTS | 1 | 0 | 1
+IMPORTS | 1 | 0 | 17
+EQ | 19 | 
+       EXP0_.EXP  =  !ST & !State<3> & !State<0> & !State<1> & !State<2> & 
+	R<8>.PIN
+	# !State<3> & State<0> & M<3> & 
+	!Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D & R<1>.PIN & R<7>.PIN
+	# !State<3> & State<0> & !M<3> & 
+	Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D & R<1>.PIN & !R<7>.PIN
+	# !State<3> & State<0> & !M<2> & 
+	Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D & R<1>.PIN & !R<6>.PIN & !R<7>.PIN
+	# !State<3> & State<0> & 
+	Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D & R<1>.PIN & !R<6>.PIN & !R<7>.PIN & !R<5>.PIN
+;Imported pterms FB1_18
+	# !State<3> & State<0> & !M<1> & !M<2> & !M<3> & 
+	Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D & R<1>.PIN
+	# !State<3> & State<0> & !M<1> & !M<3> & 
+	Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D & R<1>.PIN & !R<6>.PIN
+	# !State<3> & State<0> & M<2> & 
+	!Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D & R<1>.PIN & R<6>.PIN & R<7>.PIN
+	# !State<3> & State<0> & !M<2> & !M<3> & 
+	Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D & R<1>.PIN & !R<5>.PIN
+
+MACROCELL | 0 | 2 | EXP1_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 0 | 1
+INPUTS | 11 | R<6>.PIN  | R<7>.PIN  | R<5>.PIN  | State<3>  | State<0>  | M<1>  | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D  | M<3>  | M<2>  | EXP2_.EXP  | R<1>.PIN
+INPUTMC | 4 | 1 | 8 | 1 | 15 | 1 | 12 | 0 | 3
+INPUTP | 7 | 19 | 9 | 35 | 11 | 12 | 8 | 27
+EXPORTS | 1 | 0 | 1
+IMPORTS | 1 | 0 | 3
+EQ | 21 | 
+       EXP1_.EXP  =  !State<3> & State<0> & !M<1> & !M<2> & 
+	Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D & R<1>.PIN & !R<7>.PIN
+	# !State<3> & State<0> & !M<1> & 
+	Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D & R<1>.PIN & !R<6>.PIN & !R<7>.PIN
+	# !State<3> & State<0> & !M<2> & !M<3> & 
+	Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D & R<1>.PIN & !R<6>.PIN
+	# !State<3> & State<0> & !M<2> & 
+	Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D & R<1>.PIN & !R<7>.PIN & !R<5>.PIN
+	# !State<3> & State<0> & !M<3> & 
+	Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D & R<1>.PIN & !R<6>.PIN & !R<5>.PIN
+;Imported pterms FB1_4
+	# !State<3> & State<0> & M<2> & M<3> & 
+	!Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D & R<1>.PIN & R<6>.PIN
+	# !State<3> & State<0> & M<1> & M<2> & M<3> & 
+	!Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D & R<1>.PIN & R<5>.PIN
+	# !State<3> & State<0> & M<1> & M<2> & 
+	!Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D & R<1>.PIN & R<7>.PIN & R<5>.PIN
+	# !State<3> & State<0> & M<1> & M<3> & 
+	!Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D & R<1>.PIN & R<6>.PIN & R<5>.PIN
+	# !State<3> & State<0> & M<1> & 
+	!Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D & R<1>.PIN & R<6>.PIN & R<7>.PIN & R<5>.PIN
+
+MACROCELL | 0 | 3 | EXP2_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 0 | 2
+INPUTS | 10 | R<6>.PIN  | R<7>.PIN  | State<3>  | State<0>  | M<2>  | M<3>  | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D  | R<5>.PIN  | M<1>  | R<1>.PIN
+INPUTMC | 3 | 1 | 8 | 1 | 15 | 1 | 12
+INPUTP | 7 | 19 | 9 | 8 | 12 | 35 | 11 | 27
+EXPORTS | 1 | 0 | 2
+EQ | 10 | 
+       EXP2_.EXP  =  !State<3> & State<0> & M<2> & M<3> & 
+	!Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D & R<1>.PIN & R<6>.PIN
+	# !State<3> & State<0> & M<1> & M<2> & M<3> & 
+	!Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D & R<1>.PIN & R<5>.PIN
+	# !State<3> & State<0> & M<1> & M<2> & 
+	!Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D & R<1>.PIN & R<7>.PIN & R<5>.PIN
+	# !State<3> & State<0> & M<1> & M<3> & 
+	!Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D & R<1>.PIN & R<6>.PIN & R<5>.PIN
+	# !State<3> & State<0> & M<1> & 
+	!Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D & R<1>.PIN & R<6>.PIN & R<7>.PIN & R<5>.PIN
+
+MACROCELL | 0 | 5 | EXP3_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 0 | 6
+INPUTS | 6 | R<8>.PIN  | State<3>  | State<0>  | State<1>  | State<2>  | R<7>.PIN
+INPUTMC | 4 | 1 | 8 | 1 | 15 | 1 | 13 | 1 | 10
+INPUTP | 2 | 3 | 9
+EXPORTS | 1 | 0 | 6
+EQ | 4 | 
+       EXP3_.EXP  =  !State<3> & !State<0> & State<1> & !R<7>.PIN & 
+	R<8>.PIN
+	# !State<3> & !State<0> & State<2> & !R<7>.PIN & 
+	R<8>.PIN
+
+MACROCELL | 0 | 6 | EXP4_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 0 | 7
+INPUTS | 11 | State<3>  | State<1>  | State<2>  | R<6>.PIN  | R<7>.PIN  | State<0>  | M<2>  | M<3>  | M<1>  | EXP3_.EXP  | R<1>.PIN
+INPUTMC | 5 | 1 | 8 | 1 | 13 | 1 | 10 | 1 | 15 | 0 | 5
+INPUTP | 6 | 19 | 9 | 8 | 12 | 11 | 27
+EXPORTS | 1 | 0 | 7
+IMPORTS | 1 | 0 | 5
+EQ | 13 | 
+       EXP4_.EXP  =  State<3> & State<1> & R<7>.PIN
+	# State<3> & State<2> & R<7>.PIN
+	# !State<3> & State<0> & !M<1> & M<3> & R<1>.PIN & 
+	!R<6>.PIN
+	# !State<3> & State<0> & M<2> & !M<3> & R<1>.PIN & 
+	R<6>.PIN
+	# !State<3> & State<0> & !M<2> & M<3> & R<1>.PIN & 
+	!R<6>.PIN
+;Imported pterms FB1_6
+	# !State<3> & !State<0> & State<1> & !R<7>.PIN & 
+	R<8>.PIN
+	# !State<3> & !State<0> & State<2> & !R<7>.PIN & 
+	R<8>.PIN
+
+MACROCELL | 0 | 8 | EXP5_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 0 | 7
+INPUTS | 8 | R<8>.PIN  | State<3>  | State<0>  | State<1>  | State<2>  | R<7>.PIN  | EXP6_.EXP  | R<1>.PIN
+INPUTMC | 5 | 1 | 8 | 1 | 15 | 1 | 13 | 1 | 10 | 0 | 9
+INPUTP | 3 | 3 | 9 | 27
+EXPORTS | 1 | 0 | 7
+IMPORTS | 1 | 0 | 9
+EQ | 12 | 
+       EXP5_.EXP  =  State<3> & !State<0> & R<7>.PIN & !R<8>.PIN
+	# !State<0> & State<1> & R<7>.PIN & !R<8>.PIN
+	# !State<0> & State<2> & R<7>.PIN & !R<8>.PIN
+	# !State<3> & State<0> & !R<1>.PIN & R<7>.PIN & 
+	!R<8>.PIN
+	# !State<3> & State<0> & !R<1>.PIN & !R<7>.PIN & 
+	R<8>.PIN
+;Imported pterms FB1_10
+	# ST & !State<3> & !State<0> & !State<1> & !State<2> & 
+	R<7>.PIN
+	# State<3> & !State<0> & !State<1> & !State<2> & 
+	!R<7>.PIN & R<8>.PIN
+
+MACROCELL | 0 | 9 | EXP6_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 0 | 8
+INPUTS | 7 | ST  | R<8>.PIN  | State<3>  | State<0>  | State<1>  | State<2>  | R<7>.PIN
+INPUTMC | 4 | 1 | 8 | 1 | 15 | 1 | 13 | 1 | 10
+INPUTP | 3 | 37 | 3 | 9
+EXPORTS | 1 | 0 | 8
+EQ | 4 | 
+       EXP6_.EXP  =  ST & !State<3> & !State<0> & !State<1> & !State<2> & 
+	R<7>.PIN
+	# State<3> & !State<0> & !State<1> & !State<2> & 
+	!R<7>.PIN & R<8>.PIN
+
+MACROCELL | 0 | 12 | EXP7_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 0 | 13
+INPUTS | 7 | R<6>.PIN  | R<5>.PIN  | State<3>  | State<0>  | M<2>  | M<1>  | R<1>.PIN
+INPUTMC | 2 | 1 | 8 | 1 | 15
+INPUTP | 5 | 19 | 35 | 8 | 11 | 27
+EXPORTS | 1 | 0 | 13
+EQ | 8 | 
+       EXP7_.EXP  =  !State<3> & State<0> & !M<1> & M<2> & R<1>.PIN & 
+	!R<6>.PIN
+	# !State<3> & State<0> & !M<1> & !M<2> & R<1>.PIN & 
+	R<6>.PIN
+	# !State<3> & State<0> & M<2> & R<1>.PIN & 
+	!R<6>.PIN & !R<5>.PIN
+	# !State<3> & State<0> & !M<2> & R<1>.PIN & 
+	R<6>.PIN & !R<5>.PIN
+
+MACROCELL | 0 | 14 | EXP8_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 0 | 13
+INPUTS | 10 | ST  | R<5>.PIN  | State<3>  | State<0>  | State<1>  | State<2>  | R<6>.PIN  | M<1>  | M<2>  | R<1>.PIN
+INPUTMC | 4 | 1 | 8 | 1 | 15 | 1 | 13 | 1 | 10
+INPUTP | 6 | 37 | 35 | 19 | 11 | 8 | 27
+EXPORTS | 1 | 0 | 13
+EQ | 6 | 
+       EXP8_.EXP  =  !ST & !State<3> & !State<0> & !State<1> & !State<2> & 
+	R<6>.PIN
+	# !State<3> & State<0> & M<1> & M<2> & R<1>.PIN & 
+	R<6>.PIN & R<5>.PIN
+	# !State<3> & State<0> & M<1> & !M<2> & R<1>.PIN & 
+	!R<6>.PIN & R<5>.PIN
+
+MACROCELL | 0 | 17 | EXP9_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 0 | 0
+INPUTS | 10 | R<6>.PIN  | R<7>.PIN  | R<5>.PIN  | State<3>  | State<0>  | M<2>  | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D  | M<1>  | M<3>  | R<1>.PIN
+INPUTMC | 3 | 1 | 8 | 1 | 15 | 1 | 12
+INPUTP | 7 | 19 | 9 | 35 | 8 | 11 | 12 | 27
+EXPORTS | 1 | 0 | 0
+EQ | 8 | 
+       EXP9_.EXP  =  !State<3> & State<0> & !M<1> & !M<2> & !M<3> & 
+	Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D & R<1>.PIN
+	# !State<3> & State<0> & !M<1> & !M<3> & 
+	Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D & R<1>.PIN & !R<6>.PIN
+	# !State<3> & State<0> & M<2> & 
+	!Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D & R<1>.PIN & R<6>.PIN & R<7>.PIN
+	# !State<3> & State<0> & !M<2> & !M<3> & 
+	Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D & R<1>.PIN & !R<5>.PIN
+
+MACROCELL | 1 | 1 | EXP10_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 0
+INPUTS | 8 | R<2>.PIN  | R<3>.PIN  | State<3>  | State<0>  | State<1>  | State<2>  | EXP11_.EXP  | R<1>.PIN
+INPUTMC | 5 | 1 | 8 | 1 | 15 | 1 | 13 | 1 | 10 | 1 | 2
+INPUTP | 3 | 1 | 43 | 27
+EXPORTS | 1 | 1 | 0
+IMPORTS | 1 | 1 | 2
+EQ | 13 | 
+       EXP10_.EXP  =  !State<3> & State<0> & R<1>.PIN & R<2>.PIN
+	# !State<3> & State<0> & !R<1>.PIN & R<3>.PIN
+	# !State<3> & !State<0> & State<1> & R<3>.PIN
+	# !State<3> & !State<0> & State<2> & R<3>.PIN
+	# State<3> & State<0> & !State<1> & !State<2> & 
+	R<2>.PIN
+;Imported pterms FB2_3
+	# State<3> & !State<0> & !State<1> & !State<2> & 
+	R<3>.PIN
+	# ST & !State<3> & !State<0> & !State<1> & !State<2> & 
+	N<2>
+	# !ST & !State<3> & !State<0> & !State<1> & !State<2> & 
+	R<2>.PIN
+
+MACROCELL | 1 | 2 | EXP11_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 1
+INPUTS | 8 | State<3>  | State<0>  | State<1>  | State<2>  | ST  | N<2>  | R<3>.PIN  | R<2>.PIN
+INPUTMC | 4 | 1 | 8 | 1 | 15 | 1 | 13 | 1 | 10
+INPUTP | 4 | 37 | 34 | 43 | 1
+EXPORTS | 1 | 1 | 1
+EQ | 6 | 
+       EXP11_.EXP  =  State<3> & !State<0> & !State<1> & !State<2> & 
+	R<3>.PIN
+	# ST & !State<3> & !State<0> & !State<1> & !State<2> & 
+	N<2>
+	# !ST & !State<3> & !State<0> & !State<1> & !State<2> & 
+	R<2>.PIN
+
+MACROCELL | 1 | 4 | EXP12_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 3
+INPUTS | 8 | State<3>  | State<0>  | State<1>  | State<2>  | ST  | N<3>  | R<4>.PIN  | R<3>.PIN
+INPUTMC | 4 | 1 | 8 | 1 | 15 | 1 | 13 | 1 | 10
+INPUTP | 4 | 37 | 13 | 38 | 43
+EXPORTS | 1 | 1 | 3
+EQ | 6 | 
+       EXP12_.EXP  =  State<3> & !State<0> & !State<1> & !State<2> & 
+	R<4>.PIN
+	# ST & !State<3> & !State<0> & !State<1> & !State<2> & 
+	N<3>
+	# !ST & !State<3> & !State<0> & !State<1> & !State<2> & 
+	R<3>.PIN
+
+MACROCELL | 1 | 5 | EXP13_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 6
+INPUTS | 7 | R<4>.PIN  | State<3>  | State<0>  | State<1>  | State<2>  | ST  | R<5>.PIN
+INPUTMC | 4 | 1 | 8 | 1 | 15 | 1 | 13 | 1 | 10
+INPUTP | 3 | 38 | 37 | 35
+EXPORTS | 1 | 1 | 6
+EQ | 4 | 
+       EXP13_.EXP  =  State<3> & !State<0> & !State<1> & !State<2> & 
+	R<5>.PIN
+	# !ST & !State<3> & !State<0> & !State<1> & !State<2> & 
+	R<4>.PIN
+
+MACROCELL | 1 | 7 | EXP14_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 6
+INPUTS | 6 | ST  | State<3>  | State<0>  | State<1>  | State<2>  | N<4>
+INPUTMC | 4 | 1 | 8 | 1 | 15 | 1 | 13 | 1 | 10
+INPUTP | 2 | 37 | 14
+EXPORTS | 1 | 1 | 6
+EQ | 2 | 
+       EXP14_.EXP  =  ST & !State<3> & !State<0> & !State<1> & !State<2> & 
+	N<4>
+
+MACROCELL | 1 | 16 | EXP15_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 17
+INPUTS | 12 | R<6>.PIN  | R<7>.PIN  | R<8>.PIN  | R<5>.PIN  | State<3>  | State<0>  | M<2>  | M<4>  | M<3>  | M<1>  | State<0>.EXP  | R<1>.PIN
+INPUTMC | 3 | 1 | 8 | 1 | 15 | 1 | 15
+INPUTP | 9 | 19 | 9 | 3 | 35 | 8 | 36 | 12 | 11 | 27
+EXPORTS | 1 | 1 | 17
+IMPORTS | 1 | 1 | 15
+EQ | 15 | 
+       EXP15_.EXP  =  !State<3> & State<0> & M<2> & M<3> & M<4> & 
+	R<1>.PIN & R<6>.PIN
+	# !State<3> & State<0> & M<2> & M<3> & R<1>.PIN & 
+	R<6>.PIN & R<8>.PIN
+	# !State<3> & State<0> & M<2> & M<4> & R<1>.PIN & 
+	R<6>.PIN & R<7>.PIN
+	# !State<3> & State<0> & M<2> & R<1>.PIN & 
+	R<6>.PIN & R<7>.PIN & R<8>.PIN
+	# !State<3> & State<0> & M<1> & R<1>.PIN & 
+	R<6>.PIN & R<7>.PIN & R<8>.PIN & R<5>.PIN
+;Imported pterms FB2_16
+	# !State<3> & State<0> & M<1> & M<2> & M<3> & 
+	M<4> & R<1>.PIN & R<5>.PIN
+	# !State<3> & State<0> & M<1> & M<3> & M<4> & 
+	R<1>.PIN & R<6>.PIN & R<5>.PIN
+
+PIN | ST | 64 | 0 | N/A | 37 | 11 | 1 | 13 | 0 | 9 | 1 | 17 | 0 | 0 | 1 | 7 | 0 | 14 | 1 | 2 | 1 | 5 | 1 | 14 | 1 | 4 | 1 | 10
+PIN | CLK | 4096 | 0 | N/A | 5 | 13 | 1 | 14 | 0 | 13 | 0 | 7 | 0 | 1 | 1 | 9 | 1 | 0 | 1 | 3 | 1 | 6 | 1 | 8 | 1 | 15 | 1 | 13 | 1 | 10 | 1 | 17
+PIN | N<1> | 64 | 0 | N/A | 29 | 1 | 1 | 13
+PIN | M<2> | 64 | 0 | N/A | 8 | 11 | 0 | 12 | 0 | 7 | 0 | 0 | 1 | 16 | 0 | 2 | 0 | 3 | 0 | 6 | 0 | 14 | 0 | 17 | 1 | 0 | 1 | 15
+PIN | M<1> | 64 | 0 | N/A | 11 | 12 | 0 | 12 | 0 | 7 | 1 | 16 | 1 | 9 | 0 | 2 | 0 | 3 | 0 | 6 | 0 | 14 | 0 | 17 | 1 | 0 | 1 | 8 | 1 | 15
+PIN | M<3> | 64 | 0 | N/A | 12 | 10 | 0 | 7 | 0 | 0 | 1 | 17 | 0 | 2 | 0 | 3 | 0 | 6 | 0 | 17 | 1 | 0 | 1 | 15 | 1 | 16
+PIN | N<2> | 64 | 0 | N/A | 34 | 1 | 1 | 2
+PIN | N<3> | 64 | 0 | N/A | 13 | 1 | 1 | 4
+PIN | N<4> | 64 | 0 | N/A | 14 | 1 | 1 | 7
+PIN | M<4> | 64 | 0 | N/A | 36 | 5 | 1 | 17 | 1 | 12 | 1 | 0 | 1 | 15 | 1 | 16
+PIN | DONE | 536871040 | 0 | N/A | 33
+PIN | R<1> | 536870976 | 0 | N/A | 27 | 22 | 1 | 14 | 1 | 16 | 1 | 13 | 1 | 8 | 1 | 1 | 1 | 0 | 0 | 14 | 0 | 12 | 0 | 8 | 0 | 6 | 0 | 3 | 0 | 2 | 0 | 0 | 1 | 17 | 1 | 15 | 1 | 6 | 1 | 3 | 0 | 17 | 1 | 9 | 0 | 1 | 0 | 7 | 0 | 13
+PIN | R<6> | 536870976 | 0 | N/A | 19 | 14 | 0 | 13 | 1 | 15 | 1 | 8 | 1 | 0 | 0 | 17 | 0 | 14 | 0 | 12 | 0 | 6 | 0 | 3 | 0 | 2 | 1 | 16 | 1 | 9 | 0 | 0 | 0 | 7
+PIN | R<7> | 536870976 | 0 | N/A | 9 | 12 | 0 | 13 | 1 | 16 | 1 | 0 | 0 | 17 | 0 | 9 | 0 | 8 | 0 | 5 | 0 | 3 | 0 | 2 | 1 | 17 | 0 | 0 | 0 | 6
+PIN | R<8> | 536870976 | 0 | N/A | 3 | 9 | 0 | 5 | 1 | 16 | 1 | 0 | 0 | 9 | 0 | 8 | 0 | 0 | 1 | 12 | 1 | 17 | 0 | 1
+PIN | R<5> | 536870976 | 0 | N/A | 35 | 15 | 0 | 12 | 1 | 15 | 1 | 10 | 1 | 8 | 1 | 5 | 1 | 0 | 0 | 17 | 0 | 14 | 0 | 3 | 0 | 2 | 1 | 16 | 1 | 6 | 1 | 9 | 0 | 0 | 0 | 7
+PIN | R<2> | 536870976 | 0 | N/A | 1 | 4 | 1 | 14 | 1 | 13 | 1 | 2 | 1 | 1
+PIN | R<3> | 536870976 | 0 | N/A | 43 | 4 | 1 | 3 | 1 | 4 | 1 | 2 | 1 | 1
+PIN | R<4> | 536870976 | 0 | N/A | 38 | 4 | 1 | 3 | 1 | 5 | 1 | 4 | 1 | 6

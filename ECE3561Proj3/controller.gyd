@@ -1,0 +1,39 @@
+Pin Freeze File:  version P.20131013
+
+953644PC XC9536-5-PC44
+CLK S:PIN5
+M<1> S:PIN11
+M<2> S:PIN8
+M<3> S:PIN12
+M<4> S:PIN36
+N<1> S:PIN29
+N<2> S:PIN34
+N<3> S:PIN13
+N<4> S:PIN14
+ST S:PIN37
+R<1> S:PIN27
+R<2> S:PIN1
+R<3> S:PIN43
+R<4> S:PIN38
+R<5> S:PIN35
+R<6> S:PIN19
+R<7> S:PIN9
+R<8> S:PIN3
+DONE S:PIN33
+
+
+;The remaining section of the .gyd file is for documentation purposes only.
+;It shows where your internal equations were placed in the last successful fit.
+
+PARTITION FB1_1 EXP0_ ACC<7> EXP1_ EXP2_
+		
+PARTITION FB1_6 EXP3_ EXP4_ ACC<6> EXP5_
+		 EXP6_
+PARTITION FB1_13 EXP7_ ACC<5> EXP8_
+PARTITION FB1_18 EXP9_
+PARTITION FB2_1 ACC<1> EXP10_ EXP11_ ACC<2>
+		 EXP12_ EXP13_ ACC<3> EXP14_
+		 State<3> ACC<4> State<2> DONE_OBUF
+		 Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D State<1> ACC<0> State<0>
+		 EXP15_ ACC<8>
+

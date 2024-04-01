@@ -1,0 +1,1958 @@
+NDS Database:  version P.20131013
+
+NDS_INFO | xc9500 | 953644PC | XC9536-5-PC44
+
+DEVICE | 9536 | 953644PC | 
+
+NETWORK | controller | 0 | 0 | 201342983
+
+INPUT_INSTANCE | 0 | 0 | NULL | ST_IBUF | controller_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | ST | 4031 | PI | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | ST_IBUF | 3989 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | ST_IBUF | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | CLK_IBUF | controller_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | CLK | 4032 | PI | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 3 | 5 | II_FCLK
+NODE | FCLKIO_0 | 3990 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | CLK_IBUF | 3 | 5 | II_FCLK
+
+INPUT_INSTANCE | 0 | 0 | NULL | N_1_IBUF | controller_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | N<1> | 4037 | PI | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | N_1_IBUF | 4016 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | N_1_IBUF | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | PrldLow+OptxMapped+OeInv | ACC<0> | controller_COPY_0_COPY_0 | 2290091008 | 9 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<2>_PIN_BUF_ | 4152 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<2> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<1> | 4009 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<1>.Q | State<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<2> | 4010 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<2>.Q | State<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ST_IBUF | 3989 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | ST_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<1>.EXP | 4143 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<1>.EXP | State<1> | 4 | 0 | MC_EXPORT
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FCLKIO_0 | 3990 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | CLK_IBUF | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<1>_PIN_BUF_ | 4147 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<1> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | ACC<0>$Q | 3991 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | ACC<0>.Q | ACC<0> | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | ACC<0> | 3992 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | ACC<0>.Q | ACC<0> | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 4 | 0 | MC_EXPORT
+NODE | ACC<0>.EXP | 4144 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | ACC<0>.EXP | ACC<0> | 4 | 0 | MC_EXPORT
+
+SIGNAL_INSTANCE | ACC<0>.SI | ACC<0> | 0 | 8 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<2>_PIN_BUF_ | 4152 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<2> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<1> | 4009 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<1>.Q | State<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<2> | 4010 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<2>.Q | State<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ST_IBUF | 3989 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | ST_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<1>.EXP | 4143 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<1>.EXP | State<1> | 4 | 0 | MC_EXPORT
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<1>_PIN_BUF_ | 4147 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<1> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | ACC<0>.D1 | 4042 | ? | 0 | 4096 | ACC<0> | NULL | NULL | ACC<0>.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | ACC<0>.D2 | 4043 | ? | 0 | 4096 | ACC<0> | NULL | NULL | ACC<0>.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | State<1>.EXP
+SPPTERM | 3 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_TRUE | R<1>_PIN_BUF_
+SPPTERM | 3 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_TRUE | R<2>_PIN_BUF_
+SPPTERM | 3 | IV_FALSE | State<3> | IV_TRUE | State<1> | IV_TRUE | R<2>_PIN_BUF_
+SPPTERM | 3 | IV_FALSE | State<3> | IV_TRUE | State<2> | IV_TRUE | R<2>_PIN_BUF_
+OUTPUT_NODE_TYPE | 7 | 9 | MC_SI_EXPORT
+SIGNAL | NODE | ACC<0>.EXP | 4131 | ? | 0 | 0 | ACC<0> | NULL | NULL | ACC<0>.SI | 7 | 9 | MC_SI_EXPORT
+SPPTERM | 5 | IV_FALSE | ST_IBUF | IV_FALSE | State<3> | IV_FALSE | State<0> | IV_FALSE | State<1> | IV_FALSE | State<2>
+
+SRFF_INSTANCE | ACC<0>.REG | ACC<0> | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | ACC<0>.D | 4041 | ? | 0 | 0 | ACC<0> | NULL | NULL | ACC<0>.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | FCLKIO_0 | 3990 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | CLK_IBUF | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | ACC<0>.Q | 4044 | ? | 0 | 0 | ACC<0> | NULL | NULL | ACC<0>.REG | 0 | 8 | SRFF_Q
+
+INPUT_INSTANCE | 0 | 0 | NULL | M_2_IBUF | controller_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | M<2> | 4034 | PI | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | M_2_IBUF | 4013 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_2_IBUF | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | M_1_IBUF | controller_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | M<1> | 4033 | PI | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | M_1_IBUF | 4012 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_1_IBUF | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | PrldLow+OptxMapped+OeInv | ACC<5> | controller_COPY_0_COPY_0 | 2290091008 | 10 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<6>_PIN_BUF_ | 4148 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<6> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<1> | 4009 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<1>.Q | State<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<2> | 4010 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<2>.Q | State<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<7>_PIN_BUF_ | 4149 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<7> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | EXP7_.EXP | 4118 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | EXP7_.EXP | EXP7_ | 4 | 0 | MC_EXPORT
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | EXP8_.EXP | 4119 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | EXP8_.EXP | EXP8_ | 4 | 0 | MC_EXPORT
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<1>_PIN_BUF_ | 4147 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<1> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FCLKIO_0 | 3990 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | CLK_IBUF | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | ACC<5>$Q | 3993 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | ACC<5>.Q | ACC<5> | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | ACC<5> | 3994 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | ACC<5>.Q | ACC<5> | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | ACC<5>.SI | ACC<5> | 0 | 9 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<6>_PIN_BUF_ | 4148 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<6> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<1> | 4009 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<1>.Q | State<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<2> | 4010 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<2>.Q | State<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<7>_PIN_BUF_ | 4149 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<7> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | EXP7_.EXP | 4118 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | EXP7_.EXP | EXP7_ | 4 | 0 | MC_EXPORT
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | EXP8_.EXP | 4119 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | EXP8_.EXP | EXP8_ | 4 | 0 | MC_EXPORT
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<1>_PIN_BUF_ | 4147 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<1> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | ACC<5>.D1 | 4046 | ? | 0 | 4096 | ACC<5> | NULL | NULL | ACC<5>.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | ACC<5>.D2 | 4047 | ? | 0 | 4096 | ACC<5> | NULL | NULL | ACC<5>.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | EXP7_.EXP
+SPPTERM | 1 | IV_TRUE | EXP8_.EXP
+SPPTERM | 4 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_FALSE | R<1>_PIN_BUF_ | IV_TRUE | R<7>_PIN_BUF_
+SPPTERM | 4 | IV_FALSE | State<3> | IV_FALSE | State<0> | IV_TRUE | State<1> | IV_TRUE | R<7>_PIN_BUF_
+SPPTERM | 4 | IV_FALSE | State<3> | IV_FALSE | State<0> | IV_TRUE | State<2> | IV_TRUE | R<7>_PIN_BUF_
+SPPTERM | 5 | IV_TRUE | State<3> | IV_TRUE | State<0> | IV_FALSE | State<1> | IV_FALSE | State<2> | IV_TRUE | R<6>_PIN_BUF_
+SPPTERM | 5 | IV_TRUE | State<3> | IV_FALSE | State<0> | IV_FALSE | State<1> | IV_FALSE | State<2> | IV_TRUE | R<7>_PIN_BUF_
+
+SRFF_INSTANCE | ACC<5>.REG | ACC<5> | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | ACC<5>.D | 4045 | ? | 0 | 0 | ACC<5> | NULL | NULL | ACC<5>.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | FCLKIO_0 | 3990 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | CLK_IBUF | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | ACC<5>.Q | 4048 | ? | 0 | 0 | ACC<5> | NULL | NULL | ACC<5>.REG | 0 | 8 | SRFF_Q
+
+INPUT_INSTANCE | 0 | 0 | NULL | M_3_IBUF | controller_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | M<3> | 4035 | PI | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | M_3_IBUF | 4014 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_3_IBUF | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+OeInv | ACC<6> | controller_COPY_0_COPY_0 | 2290095104 | 11 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<6>_PIN_BUF_ | 4148 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<6> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<5>_PIN_BUF_ | 4151 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<5> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_1_IBUF | 4012 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_3_IBUF | 4014 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_3_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_2_IBUF | 4013 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | EXP4_.EXP | 4115 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | EXP4_.EXP | EXP4_ | 4 | 0 | MC_EXPORT
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | EXP5_.EXP | 4116 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | EXP5_.EXP | EXP5_ | 4 | 0 | MC_EXPORT
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<1>_PIN_BUF_ | 4147 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<1> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FCLKIO_0 | 3990 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | CLK_IBUF | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | ACC<6>$Q | 3995 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | ACC<6>.Q | ACC<6> | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | ACC<6> | 3996 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | ACC<6>.Q | ACC<6> | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | ACC<6>.SI | ACC<6> | 0 | 10 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<6>_PIN_BUF_ | 4148 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<6> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<5>_PIN_BUF_ | 4151 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<5> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_1_IBUF | 4012 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_3_IBUF | 4014 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_3_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_2_IBUF | 4013 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | EXP4_.EXP | 4115 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | EXP4_.EXP | EXP4_ | 4 | 0 | MC_EXPORT
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | EXP5_.EXP | 4116 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | EXP5_.EXP | EXP5_ | 4 | 0 | MC_EXPORT
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<1>_PIN_BUF_ | 4147 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<1> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | ACC<6>.D1 | 4050 | ? | 0 | 4096 | ACC<6> | NULL | NULL | ACC<6>.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | ACC<6>.D2 | 4051 | ? | 0 | 4096 | ACC<6> | NULL | NULL | ACC<6>.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | EXP4_.EXP
+SPPTERM | 1 | IV_TRUE | EXP5_.EXP
+SPPTERM | 6 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_FALSE | M_1_IBUF | IV_FALSE | M_2_IBUF | IV_TRUE | M_3_IBUF | IV_TRUE | R<1>_PIN_BUF_
+SPPTERM | 6 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_FALSE | M_2_IBUF | IV_TRUE | M_3_IBUF | IV_TRUE | R<1>_PIN_BUF_ | IV_FALSE | R<5>_PIN_BUF_
+SPPTERM | 6 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_TRUE | M_3_IBUF | IV_TRUE | R<1>_PIN_BUF_ | IV_FALSE | R<6>_PIN_BUF_ | IV_FALSE | R<5>_PIN_BUF_
+SPPTERM | 7 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_TRUE | M_1_IBUF | IV_TRUE | M_2_IBUF | IV_FALSE | M_3_IBUF | IV_TRUE | R<1>_PIN_BUF_ | IV_TRUE | R<5>_PIN_BUF_
+SPPTERM | 7 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_TRUE | M_1_IBUF | IV_FALSE | M_3_IBUF | IV_TRUE | R<1>_PIN_BUF_ | IV_TRUE | R<6>_PIN_BUF_ | IV_TRUE | R<5>_PIN_BUF_
+
+SRFF_INSTANCE | ACC<6>.REG | ACC<6> | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | ACC<6>.D | 4049 | ? | 0 | 0 | ACC<6> | NULL | NULL | ACC<6>.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | FCLKIO_0 | 3990 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | CLK_IBUF | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | ACC<6>.Q | 4052 | ? | 0 | 0 | ACC<6> | NULL | NULL | ACC<6>.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+OptxMapped+OeInv | ACC<7> | controller_COPY_0_COPY_0 | 2290091008 | 10 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<8>_PIN_BUF_ | 4150 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<8> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ACC<8> | 4011 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | ACC<8>.Q | ACC<8> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<1> | 4009 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<1>.Q | State<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<2> | 4010 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<2>.Q | State<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | EXP0_.EXP | 4111 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | EXP0_.EXP | EXP0_ | 4 | 0 | MC_EXPORT
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | EXP1_.EXP | 4112 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | EXP1_.EXP | EXP1_ | 4 | 0 | MC_EXPORT
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<1>_PIN_BUF_ | 4147 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<1> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FCLKIO_0 | 3990 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | CLK_IBUF | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | ACC<7>$Q | 3997 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | ACC<7>.Q | ACC<7> | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | ACC<7> | 3998 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | ACC<7>.Q | ACC<7> | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | ACC<7>.SI | ACC<7> | 0 | 9 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<8>_PIN_BUF_ | 4150 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<8> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ACC<8> | 4011 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | ACC<8>.Q | ACC<8> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<1> | 4009 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<1>.Q | State<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<2> | 4010 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<2>.Q | State<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | EXP0_.EXP | 4111 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | EXP0_.EXP | EXP0_ | 4 | 0 | MC_EXPORT
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | EXP1_.EXP | 4112 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | EXP1_.EXP | EXP1_ | 4 | 0 | MC_EXPORT
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<1>_PIN_BUF_ | 4147 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<1> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | ACC<7>.D1 | 4054 | ? | 0 | 4096 | ACC<7> | NULL | NULL | ACC<7>.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | ACC<7>.D2 | 4055 | ? | 0 | 4096 | ACC<7> | NULL | NULL | ACC<7>.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | EXP0_.EXP
+SPPTERM | 1 | IV_TRUE | EXP1_.EXP
+SPPTERM | 4 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_TRUE | ACC<8> | IV_FALSE | R<1>_PIN_BUF_
+SPPTERM | 4 | IV_FALSE | State<3> | IV_FALSE | State<0> | IV_TRUE | State<1> | IV_TRUE | ACC<8>
+SPPTERM | 4 | IV_FALSE | State<3> | IV_FALSE | State<0> | IV_TRUE | State<2> | IV_TRUE | ACC<8>
+SPPTERM | 5 | IV_TRUE | State<3> | IV_TRUE | State<0> | IV_FALSE | State<1> | IV_FALSE | State<2> | IV_TRUE | R<8>_PIN_BUF_
+SPPTERM | 5 | IV_TRUE | State<3> | IV_FALSE | State<0> | IV_FALSE | State<1> | IV_FALSE | State<2> | IV_TRUE | ACC<8>
+
+SRFF_INSTANCE | ACC<7>.REG | ACC<7> | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | ACC<7>.D | 4053 | ? | 0 | 0 | ACC<7> | NULL | NULL | ACC<7>.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | FCLKIO_0 | 3990 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | CLK_IBUF | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | ACC<7>.Q | 4056 | ? | 0 | 0 | ACC<7> | NULL | NULL | ACC<7>.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+OptxMapped+OeInv | ACC<4> | controller_COPY_0_COPY_0 | 2290091008 | 11 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<5>_PIN_BUF_ | 4151 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<5> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<1> | 4009 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<1>.Q | State<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<2> | 4010 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<2>.Q | State<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<6>_PIN_BUF_ | 4148 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<6> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_1_IBUF | 4012 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3>.EXP | 4140 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.EXP | State<3> | 4 | 0 | MC_EXPORT
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FCLKIO_0 | 3990 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | CLK_IBUF | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<2>.EXP | 4141 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<2>.EXP | State<2> | 4 | 0 | MC_EXPORT
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<1>_PIN_BUF_ | 4147 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<1> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | ACC<4>$Q | 3999 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | ACC<4>.Q | ACC<4> | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | ACC<4> | 4000 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | ACC<4>.Q | ACC<4> | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | ACC<4>.SI | ACC<4> | 0 | 10 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<5>_PIN_BUF_ | 4151 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<5> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<1> | 4009 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<1>.Q | State<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<2> | 4010 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<2>.Q | State<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<6>_PIN_BUF_ | 4148 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<6> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_1_IBUF | 4012 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3>.EXP | 4140 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.EXP | State<3> | 4 | 0 | MC_EXPORT
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<2>.EXP | 4141 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<2>.EXP | State<2> | 4 | 0 | MC_EXPORT
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<1>_PIN_BUF_ | 4147 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<1> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | ACC<4>.D1 | 4058 | ? | 0 | 4096 | ACC<4> | NULL | NULL | ACC<4>.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | ACC<4>.D2 | 4059 | ? | 0 | 4096 | ACC<4> | NULL | NULL | ACC<4>.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | State<3>.EXP
+SPPTERM | 1 | IV_TRUE | State<2>.EXP
+SPPTERM | 4 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_FALSE | R<1>_PIN_BUF_ | IV_TRUE | R<6>_PIN_BUF_
+SPPTERM | 4 | IV_FALSE | State<3> | IV_FALSE | State<0> | IV_TRUE | State<1> | IV_TRUE | R<6>_PIN_BUF_
+SPPTERM | 4 | IV_FALSE | State<3> | IV_FALSE | State<0> | IV_TRUE | State<2> | IV_TRUE | R<6>_PIN_BUF_
+SPPTERM | 5 | IV_TRUE | State<3> | IV_TRUE | State<0> | IV_FALSE | State<1> | IV_FALSE | State<2> | IV_TRUE | R<5>_PIN_BUF_
+SPPTERM | 5 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_TRUE | M_1_IBUF | IV_TRUE | R<1>_PIN_BUF_ | IV_FALSE | R<5>_PIN_BUF_
+
+SRFF_INSTANCE | ACC<4>.REG | ACC<4> | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | ACC<4>.D | 4057 | ? | 0 | 0 | ACC<4> | NULL | NULL | ACC<4>.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | FCLKIO_0 | 3990 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | CLK_IBUF | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | ACC<4>.Q | 4060 | ? | 0 | 0 | ACC<4> | NULL | NULL | ACC<4>.REG | 0 | 8 | SRFF_Q
+
+INPUT_INSTANCE | 0 | 0 | NULL | N_2_IBUF | controller_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | N<2> | 4038 | PI | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | N_2_IBUF | 4017 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | N_2_IBUF | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | PrldLow+OptxMapped+OeInv | ACC<1> | controller_COPY_0_COPY_0 | 2290091008 | 13 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<6>_PIN_BUF_ | 4148 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<6> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<7>_PIN_BUF_ | 4149 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<7> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<8>_PIN_BUF_ | 4150 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<8> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_1_IBUF | 4012 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_4_IBUF | 4015 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_4_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<5>_PIN_BUF_ | 4151 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<5> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FCLKIO_0 | 3990 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | CLK_IBUF | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_3_IBUF | 4014 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_3_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_2_IBUF | 4013 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | EXP10_.EXP | 4135 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | EXP10_.EXP | EXP10_ | 4 | 0 | MC_EXPORT
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<1>_PIN_BUF_ | 4147 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<1> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | ACC<1>$Q | 4001 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | ACC<1>.Q | ACC<1> | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | ACC<1> | 4002 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | ACC<1>.Q | ACC<1> | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 4 | 0 | MC_EXPORT
+NODE | ACC<1>.EXP | 4134 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | ACC<1>.EXP | ACC<1> | 4 | 0 | MC_EXPORT
+
+SIGNAL_INSTANCE | ACC<1>.SI | ACC<1> | 0 | 12 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<6>_PIN_BUF_ | 4148 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<6> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<7>_PIN_BUF_ | 4149 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<7> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<8>_PIN_BUF_ | 4150 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<8> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_1_IBUF | 4012 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_4_IBUF | 4015 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_4_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<5>_PIN_BUF_ | 4151 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<5> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_3_IBUF | 4014 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_3_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_2_IBUF | 4013 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | EXP10_.EXP | 4135 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | EXP10_.EXP | EXP10_ | 4 | 0 | MC_EXPORT
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<1>_PIN_BUF_ | 4147 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<1> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | ACC<1>.D1 | 4062 | ? | 0 | 4096 | ACC<1> | NULL | NULL | ACC<1>.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | ACC<1>.D2 | 4063 | ? | 0 | 4096 | ACC<1> | NULL | NULL | ACC<1>.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | EXP10_.EXP
+OUTPUT_NODE_TYPE | 7 | 9 | MC_SI_EXPORT
+SIGNAL | NODE | ACC<1>.EXP | 4121 | ? | 0 | 0 | ACC<1> | NULL | NULL | ACC<1>.SI | 7 | 9 | MC_SI_EXPORT
+SPPTERM | 8 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_TRUE | M_1_IBUF | IV_TRUE | M_2_IBUF | IV_TRUE | M_3_IBUF | IV_TRUE | R<1>_PIN_BUF_ | IV_TRUE | R<8>_PIN_BUF_ | IV_TRUE | R<5>_PIN_BUF_
+SPPTERM | 8 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_TRUE | M_1_IBUF | IV_TRUE | M_2_IBUF | IV_TRUE | M_4_IBUF | IV_TRUE | R<1>_PIN_BUF_ | IV_TRUE | R<7>_PIN_BUF_ | IV_TRUE | R<5>_PIN_BUF_
+SPPTERM | 8 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_TRUE | M_1_IBUF | IV_TRUE | M_2_IBUF | IV_TRUE | R<1>_PIN_BUF_ | IV_TRUE | R<7>_PIN_BUF_ | IV_TRUE | R<8>_PIN_BUF_ | IV_TRUE | R<5>_PIN_BUF_
+SPPTERM | 8 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_TRUE | M_1_IBUF | IV_TRUE | M_3_IBUF | IV_TRUE | R<1>_PIN_BUF_ | IV_TRUE | R<6>_PIN_BUF_ | IV_TRUE | R<8>_PIN_BUF_ | IV_TRUE | R<5>_PIN_BUF_
+SPPTERM | 8 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_TRUE | M_1_IBUF | IV_TRUE | M_4_IBUF | IV_TRUE | R<1>_PIN_BUF_ | IV_TRUE | R<6>_PIN_BUF_ | IV_TRUE | R<7>_PIN_BUF_ | IV_TRUE | R<5>_PIN_BUF_
+
+SRFF_INSTANCE | ACC<1>.REG | ACC<1> | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | ACC<1>.D | 4061 | ? | 0 | 0 | ACC<1> | NULL | NULL | ACC<1>.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | FCLKIO_0 | 3990 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | CLK_IBUF | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | ACC<1>.Q | 4064 | ? | 0 | 0 | ACC<1> | NULL | NULL | ACC<1>.REG | 0 | 8 | SRFF_Q
+
+INPUT_INSTANCE | 0 | 0 | NULL | N_3_IBUF | controller_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | N<3> | 4039 | PI | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | N_3_IBUF | 4018 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | N_3_IBUF | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | PrldLow+OptxMapped+OeInv | ACC<2> | controller_COPY_0_COPY_0 | 2290091008 | 9 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<1> | 4009 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<1>.Q | State<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<2> | 4010 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<2>.Q | State<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<3>_PIN_BUF_ | 4153 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<3> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<4>_PIN_BUF_ | 4154 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<4> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | EXP12_.EXP | 4137 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | EXP12_.EXP | EXP12_ | 4 | 0 | MC_EXPORT
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<1>_PIN_BUF_ | 4147 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<1> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FCLKIO_0 | 3990 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | CLK_IBUF | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | ACC<2>$Q | 4003 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | ACC<2>.Q | ACC<2> | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | ACC<2> | 4004 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | ACC<2>.Q | ACC<2> | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | ACC<2>.SI | ACC<2> | 0 | 8 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<1> | 4009 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<1>.Q | State<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<2> | 4010 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<2>.Q | State<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<3>_PIN_BUF_ | 4153 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<3> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<4>_PIN_BUF_ | 4154 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<4> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | EXP12_.EXP | 4137 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | EXP12_.EXP | EXP12_ | 4 | 0 | MC_EXPORT
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<1>_PIN_BUF_ | 4147 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<1> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | ACC<2>.D1 | 4066 | ? | 0 | 4096 | ACC<2> | NULL | NULL | ACC<2>.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | ACC<2>.D2 | 4067 | ? | 0 | 4096 | ACC<2> | NULL | NULL | ACC<2>.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | EXP12_.EXP
+SPPTERM | 4 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_TRUE | R<1>_PIN_BUF_ | IV_TRUE | R<3>_PIN_BUF_
+SPPTERM | 4 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_FALSE | R<1>_PIN_BUF_ | IV_TRUE | R<4>_PIN_BUF_
+SPPTERM | 4 | IV_FALSE | State<3> | IV_FALSE | State<0> | IV_TRUE | State<1> | IV_TRUE | R<4>_PIN_BUF_
+SPPTERM | 4 | IV_FALSE | State<3> | IV_FALSE | State<0> | IV_TRUE | State<2> | IV_TRUE | R<4>_PIN_BUF_
+SPPTERM | 5 | IV_TRUE | State<3> | IV_TRUE | State<0> | IV_FALSE | State<1> | IV_FALSE | State<2> | IV_TRUE | R<3>_PIN_BUF_
+
+SRFF_INSTANCE | ACC<2>.REG | ACC<2> | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | ACC<2>.D | 4065 | ? | 0 | 0 | ACC<2> | NULL | NULL | ACC<2>.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | FCLKIO_0 | 3990 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | CLK_IBUF | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | ACC<2>.Q | 4068 | ? | 0 | 0 | ACC<2> | NULL | NULL | ACC<2>.REG | 0 | 8 | SRFF_Q
+
+INPUT_INSTANCE | 0 | 0 | NULL | N_4_IBUF | controller_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | N<4> | 4040 | PI | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | N_4_IBUF | 4019 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | N_4_IBUF | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | PrldLow+OptxMapped+OeInv | ACC<3> | controller_COPY_0_COPY_0 | 2290091008 | 10 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<4>_PIN_BUF_ | 4154 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<4> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<1> | 4009 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<1>.Q | State<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<2> | 4010 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<2>.Q | State<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<5>_PIN_BUF_ | 4151 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<5> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | EXP13_.EXP | 4138 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | EXP13_.EXP | EXP13_ | 4 | 0 | MC_EXPORT
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | EXP14_.EXP | 4139 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | EXP14_.EXP | EXP14_ | 4 | 0 | MC_EXPORT
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FCLKIO_0 | 3990 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | CLK_IBUF | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<1>_PIN_BUF_ | 4147 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<1> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | ACC<3>$Q | 4005 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | ACC<3>.Q | ACC<3> | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | ACC<3> | 4006 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | ACC<3>.Q | ACC<3> | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | ACC<3>.SI | ACC<3> | 0 | 9 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<4>_PIN_BUF_ | 4154 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<4> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<1> | 4009 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<1>.Q | State<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<2> | 4010 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<2>.Q | State<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<5>_PIN_BUF_ | 4151 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<5> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | EXP13_.EXP | 4138 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | EXP13_.EXP | EXP13_ | 4 | 0 | MC_EXPORT
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | EXP14_.EXP | 4139 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | EXP14_.EXP | EXP14_ | 4 | 0 | MC_EXPORT
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<1>_PIN_BUF_ | 4147 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<1> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | ACC<3>.D1 | 4070 | ? | 0 | 4096 | ACC<3> | NULL | NULL | ACC<3>.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | ACC<3>.D2 | 4071 | ? | 0 | 4096 | ACC<3> | NULL | NULL | ACC<3>.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | EXP13_.EXP
+SPPTERM | 1 | IV_TRUE | EXP14_.EXP
+SPPTERM | 4 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_TRUE | R<1>_PIN_BUF_ | IV_TRUE | R<4>_PIN_BUF_
+SPPTERM | 4 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_FALSE | R<1>_PIN_BUF_ | IV_TRUE | R<5>_PIN_BUF_
+SPPTERM | 4 | IV_FALSE | State<3> | IV_FALSE | State<0> | IV_TRUE | State<1> | IV_TRUE | R<5>_PIN_BUF_
+SPPTERM | 4 | IV_FALSE | State<3> | IV_FALSE | State<0> | IV_TRUE | State<2> | IV_TRUE | R<5>_PIN_BUF_
+SPPTERM | 5 | IV_TRUE | State<3> | IV_TRUE | State<0> | IV_FALSE | State<1> | IV_FALSE | State<2> | IV_TRUE | R<4>_PIN_BUF_
+
+SRFF_INSTANCE | ACC<3>.REG | ACC<3> | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | ACC<3>.D | 4069 | ? | 0 | 0 | ACC<3> | NULL | NULL | ACC<3>.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | FCLKIO_0 | 3990 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | CLK_IBUF | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | ACC<3>.Q | 4072 | ? | 0 | 0 | ACC<3> | NULL | NULL | ACC<3>.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+OptxMapped | State<3> | controller_COPY_0_COPY_0 | 2155873280 | 9 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<1> | 4009 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<1>.Q | State<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<2> | 4010 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<2>.Q | State<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FCLKIO_0 | 3990 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | CLK_IBUF | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<6>_PIN_BUF_ | 4148 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<6> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_1_IBUF | 4012 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<5>_PIN_BUF_ | 4151 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<5> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<1>_PIN_BUF_ | 4147 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<1> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 4 | 0 | MC_EXPORT
+NODE | State<3>.EXP | 4140 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.EXP | State<3> | 4 | 0 | MC_EXPORT
+
+SIGNAL_INSTANCE | State<3>.SI | State<3> | 0 | 8 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<1> | 4009 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<1>.Q | State<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<2> | 4010 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<2>.Q | State<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<6>_PIN_BUF_ | 4148 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<6> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_1_IBUF | 4012 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<5>_PIN_BUF_ | 4151 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<5> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<1>_PIN_BUF_ | 4147 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<1> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | State<3>.D1 | 4074 | ? | 0 | 4096 | State<3> | NULL | NULL | State<3>.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | State<3>.D2 | 4075 | ? | 0 | 4096 | State<3> | NULL | NULL | State<3>.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 4 | IV_TRUE | State<3> | IV_FALSE | State<0> | IV_FALSE | State<1> | IV_FALSE | State<2>
+SPPTERM | 4 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_TRUE | State<1> | IV_TRUE | State<2>
+OUTPUT_NODE_TYPE | 7 | 9 | MC_SI_EXPORT
+SIGNAL | NODE | State<3>.EXP | 4127 | ? | 0 | 0 | State<3> | NULL | NULL | State<3>.SI | 7 | 9 | MC_SI_EXPORT
+SPPTERM | 5 | IV_TRUE | State<3> | IV_FALSE | State<0> | IV_FALSE | State<1> | IV_FALSE | State<2> | IV_TRUE | R<6>_PIN_BUF_
+SPPTERM | 5 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_FALSE | M_1_IBUF | IV_TRUE | R<1>_PIN_BUF_ | IV_TRUE | R<5>_PIN_BUF_
+
+SRFF_INSTANCE | State<3>.REG | State<3> | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | State<3>.D | 4073 | ? | 0 | 0 | State<3> | NULL | NULL | State<3>.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | FCLKIO_0 | 3990 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | CLK_IBUF | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | State<3>.Q | 4076 | ? | 0 | 0 | State<3> | NULL | NULL | State<3>.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | Inv+PrldLow+Tff+OptxMapped | State<0> | controller_COPY_0_COPY_0 | 2155877632 | 13 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<1> | 4009 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<1>.Q | State<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<2> | 4010 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<2>.Q | State<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<6>_PIN_BUF_ | 4148 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<6> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<5>_PIN_BUF_ | 4151 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<5> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FCLKIO_0 | 3990 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | CLK_IBUF | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_1_IBUF | 4012 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_3_IBUF | 4014 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_3_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_4_IBUF | 4015 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_4_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_2_IBUF | 4013 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ACC<0>.EXP | 4144 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | ACC<0>.EXP | ACC<0> | 4 | 0 | MC_EXPORT
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<1>_PIN_BUF_ | 4147 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<1> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 4 | 0 | MC_EXPORT
+NODE | State<0>.EXP | 4145 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.EXP | State<0> | 4 | 0 | MC_EXPORT
+
+SIGNAL_INSTANCE | State<0>.SI | State<0> | 0 | 12 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<1> | 4009 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<1>.Q | State<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<2> | 4010 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<2>.Q | State<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<6>_PIN_BUF_ | 4148 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<6> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<5>_PIN_BUF_ | 4151 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<5> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_1_IBUF | 4012 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_3_IBUF | 4014 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_3_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_4_IBUF | 4015 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_4_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_2_IBUF | 4013 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ACC<0>.EXP | 4144 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | ACC<0>.EXP | ACC<0> | 4 | 0 | MC_EXPORT
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<1>_PIN_BUF_ | 4147 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<1> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | State<0>.D1 | 4078 | ? | 0 | 4096 | State<0> | NULL | NULL | State<0>.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | State<0>.D2 | 4079 | ? | 0 | 4096 | State<0> | NULL | NULL | State<0>.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | ACC<0>.EXP
+SPPTERM | 3 | IV_TRUE | State<3> | IV_FALSE | State<0> | IV_TRUE | State<1>
+SPPTERM | 3 | IV_TRUE | State<3> | IV_FALSE | State<0> | IV_TRUE | State<2>
+SPPTERM | 3 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_FALSE | R<1>_PIN_BUF_
+OUTPUT_NODE_TYPE | 7 | 9 | MC_SI_EXPORT
+SIGNAL | NODE | State<0>.EXP | 4132 | ? | 0 | 0 | State<0> | NULL | NULL | State<0>.SI | 7 | 9 | MC_SI_EXPORT
+SPPTERM | 8 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_TRUE | M_1_IBUF | IV_TRUE | M_2_IBUF | IV_TRUE | M_3_IBUF | IV_TRUE | M_4_IBUF | IV_TRUE | R<1>_PIN_BUF_ | IV_TRUE | R<5>_PIN_BUF_
+SPPTERM | 8 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_TRUE | M_1_IBUF | IV_TRUE | M_3_IBUF | IV_TRUE | M_4_IBUF | IV_TRUE | R<1>_PIN_BUF_ | IV_TRUE | R<6>_PIN_BUF_ | IV_TRUE | R<5>_PIN_BUF_
+
+SRFF_INSTANCE | State<0>.REG | State<0> | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | State<0>.D | 4077 | ? | 0 | 0 | State<0> | NULL | NULL | State<0>.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | FCLKIO_0 | 3990 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | CLK_IBUF | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | State<0>.Q | 4080 | ? | 0 | 0 | State<0> | NULL | NULL | State<0>.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+OptxMapped | State<1> | controller_COPY_0_COPY_0 | 2155873280 | 10 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<1> | 4009 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<1>.Q | State<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FCLKIO_0 | 3990 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | CLK_IBUF | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<2>_PIN_BUF_ | 4152 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<2> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<2> | 4010 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<2>.Q | State<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ST_IBUF | 3989 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | ST_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_1_IBUF | 4016 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | N_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D.EXP | 4142 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D.EXP | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D | 4 | 0 | MC_EXPORT
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<1>_PIN_BUF_ | 4147 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<1> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | State<1> | 4009 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<1>.Q | State<1> | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 4 | 0 | MC_EXPORT
+NODE | State<1>.EXP | 4143 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<1>.EXP | State<1> | 4 | 0 | MC_EXPORT
+
+SIGNAL_INSTANCE | State<1>.SI | State<1> | 0 | 9 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<1> | 4009 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<1>.Q | State<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<2>_PIN_BUF_ | 4152 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<2> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<2> | 4010 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<2>.Q | State<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ST_IBUF | 3989 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | ST_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_1_IBUF | 4016 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | N_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D.EXP | 4142 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D.EXP | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D | 4 | 0 | MC_EXPORT
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<1>_PIN_BUF_ | 4147 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<1> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | State<1>.D1 | 4082 | ? | 0 | 4096 | State<1> | NULL | NULL | State<1>.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | State<1>.D2 | 4083 | ? | 0 | 4096 | State<1> | NULL | NULL | State<1>.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D.EXP
+SPPTERM | 3 | IV_FALSE | State<3> | IV_FALSE | State<0> | IV_TRUE | State<1>
+OUTPUT_NODE_TYPE | 7 | 9 | MC_SI_EXPORT
+SIGNAL | NODE | State<1>.EXP | 4130 | ? | 0 | 0 | State<1> | NULL | NULL | State<1>.SI | 7 | 9 | MC_SI_EXPORT
+SPPTERM | 4 | IV_TRUE | State<0> | IV_FALSE | State<1> | IV_FALSE | State<2> | IV_TRUE | R<1>_PIN_BUF_
+SPPTERM | 5 | IV_FALSE | ST_IBUF | IV_FALSE | State<3> | IV_FALSE | State<1> | IV_FALSE | State<2> | IV_TRUE | R<1>_PIN_BUF_
+SPPTERM | 5 | IV_TRUE | State<3> | IV_FALSE | State<0> | IV_FALSE | State<1> | IV_FALSE | State<2> | IV_TRUE | R<2>_PIN_BUF_
+SPPTERM | 6 | IV_TRUE | ST_IBUF | IV_FALSE | State<3> | IV_FALSE | State<0> | IV_FALSE | State<1> | IV_FALSE | State<2> | IV_TRUE | N_1_IBUF
+
+SRFF_INSTANCE | State<1>.REG | State<1> | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | State<1>.D | 4081 | ? | 0 | 0 | State<1> | NULL | NULL | State<1>.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | FCLKIO_0 | 3990 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | CLK_IBUF | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | State<1>.Q | 4084 | ? | 0 | 0 | State<1> | NULL | NULL | State<1>.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped | State<2> | controller_COPY_0_COPY_0 | 2155877376 | 7 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<1> | 4009 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<1>.Q | State<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<2> | 4010 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<2>.Q | State<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FCLKIO_0 | 3990 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | CLK_IBUF | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ST_IBUF | 3989 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | ST_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<5>_PIN_BUF_ | 4151 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<5> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | State<2> | 4010 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<2>.Q | State<2> | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 4 | 0 | MC_EXPORT
+NODE | State<2>.EXP | 4141 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<2>.EXP | State<2> | 4 | 0 | MC_EXPORT
+
+SIGNAL_INSTANCE | State<2>.SI | State<2> | 0 | 6 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<1> | 4009 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<1>.Q | State<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<2> | 4010 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<2>.Q | State<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ST_IBUF | 3989 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | ST_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<5>_PIN_BUF_ | 4151 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<5> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | State<2>.D1 | 4086 | ? | 0 | 4096 | State<2> | NULL | NULL | State<2>.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | State<2>.D2 | 4087 | ? | 0 | 4096 | State<2> | NULL | NULL | State<2>.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | State<3> | IV_TRUE | State<2>
+SPPTERM | 3 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_TRUE | State<1>
+OUTPUT_NODE_TYPE | 7 | 9 | MC_SI_EXPORT
+SIGNAL | NODE | State<2>.EXP | 4128 | ? | 0 | 0 | State<2> | NULL | NULL | State<2>.SI | 7 | 9 | MC_SI_EXPORT
+SPPTERM | 6 | IV_FALSE | ST_IBUF | IV_FALSE | State<3> | IV_FALSE | State<0> | IV_FALSE | State<1> | IV_FALSE | State<2> | IV_TRUE | R<5>_PIN_BUF_
+
+SRFF_INSTANCE | State<2>.REG | State<2> | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | State<2>.D | 4085 | ? | 0 | 0 | State<2> | NULL | NULL | State<2>.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | FCLKIO_0 | 3990 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | CLK_IBUF | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | State<2>.Q | 4088 | ? | 0 | 0 | State<2> | NULL | NULL | State<2>.REG | 0 | 8 | SRFF_Q
+
+INPUT_INSTANCE | 0 | 0 | NULL | M_4_IBUF | controller_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | M<4> | 4036 | PI | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | M_4_IBUF | 4015 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_4_IBUF | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | PrldLow+OptxMapped | ACC<8> | controller_COPY_0_COPY_0 | 2155873280 | 14 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<7>_PIN_BUF_ | 4149 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<7> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_4_IBUF | 4015 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_4_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<1> | 4009 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<1>.Q | State<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<2> | 4010 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<2>.Q | State<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ACC<8> | 4011 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | ACC<8>.Q | ACC<8> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<8>_PIN_BUF_ | 4150 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<8> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_3_IBUF | 4014 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_3_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ST_IBUF | 3989 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | ST_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ACC<1>.EXP | 4134 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | ACC<1>.EXP | ACC<1> | 4 | 0 | MC_EXPORT
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | EXP15_.EXP | 4146 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | EXP15_.EXP | EXP15_ | 4 | 0 | MC_EXPORT
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<1>_PIN_BUF_ | 4147 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<1> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FCLKIO_0 | 3990 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | CLK_IBUF | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | ACC<8> | 4011 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | ACC<8>.Q | ACC<8> | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | ACC<8>.SI | ACC<8> | 0 | 13 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<7>_PIN_BUF_ | 4149 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<7> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_4_IBUF | 4015 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_4_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<1> | 4009 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<1>.Q | State<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<2> | 4010 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<2>.Q | State<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ACC<8> | 4011 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | ACC<8>.Q | ACC<8> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<8>_PIN_BUF_ | 4150 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<8> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_3_IBUF | 4014 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_3_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ST_IBUF | 3989 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | ST_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ACC<1>.EXP | 4134 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | ACC<1>.EXP | ACC<1> | 4 | 0 | MC_EXPORT
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | EXP15_.EXP | 4146 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | EXP15_.EXP | EXP15_ | 4 | 0 | MC_EXPORT
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<1>_PIN_BUF_ | 4147 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<1> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | ACC<8>.D1 | 4090 | ? | 0 | 4096 | ACC<8> | NULL | NULL | ACC<8>.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | ACC<8>.D2 | 4091 | ? | 0 | 4096 | ACC<8> | NULL | NULL | ACC<8>.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | ACC<1>.EXP
+SPPTERM | 1 | IV_TRUE | EXP15_.EXP
+SPPTERM | 5 | IV_TRUE | State<3> | IV_TRUE | State<0> | IV_FALSE | State<1> | IV_FALSE | State<2> | IV_TRUE | ACC<8>
+SPPTERM | 5 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_TRUE | M_4_IBUF | IV_TRUE | R<1>_PIN_BUF_ | IV_TRUE | R<8>_PIN_BUF_
+SPPTERM | 6 | IV_FALSE | ST_IBUF | IV_FALSE | State<3> | IV_FALSE | State<0> | IV_FALSE | State<1> | IV_FALSE | State<2> | IV_TRUE | ACC<8>
+SPPTERM | 6 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_TRUE | M_3_IBUF | IV_TRUE | M_4_IBUF | IV_TRUE | R<1>_PIN_BUF_ | IV_TRUE | R<7>_PIN_BUF_
+SPPTERM | 6 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_TRUE | M_3_IBUF | IV_TRUE | R<1>_PIN_BUF_ | IV_TRUE | R<7>_PIN_BUF_ | IV_TRUE | R<8>_PIN_BUF_
+
+SRFF_INSTANCE | ACC<8>.REG | ACC<8> | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | ACC<8>.D | 4089 | ? | 0 | 0 | ACC<8> | NULL | NULL | ACC<8>.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | FCLKIO_0 | 3990 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | CLK_IBUF | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | ACC<8>.Q | 4092 | ? | 0 | 0 | ACC<8> | NULL | NULL | ACC<8>.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | OptxMapped | DONE_OBUF | controller_COPY_0_COPY_0 | 2155872256 | 4 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<1> | 4009 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<1>.Q | State<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<2> | 4010 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<2>.Q | State<2> | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | DONE_OBUF | 4020 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | DONE_OBUF.Q | DONE_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | DONE_OBUF.UIM | 4155 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | DONE_OBUF.Q | DONE_OBUF | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | DONE_OBUF.SI | DONE_OBUF | 0 | 4 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<1> | 4009 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<1>.Q | State<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<2> | 4010 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<2>.Q | State<2> | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | DONE_OBUF.D1 | 4094 | ? | 0 | 4096 | DONE_OBUF | NULL | NULL | DONE_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | DONE_OBUF.D2 | 4095 | ? | 0 | 4096 | DONE_OBUF | NULL | NULL | DONE_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 4 | IV_TRUE | State<3> | IV_TRUE | State<0> | IV_FALSE | State<1> | IV_FALSE | State<2>
+
+SRFF_INSTANCE | DONE_OBUF.REG | DONE_OBUF | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | DONE_OBUF.D | 4093 | ? | 0 | 0 | DONE_OBUF | NULL | NULL | DONE_OBUF.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | DONE_OBUF.Q | 4096 | ? | 0 | 0 | DONE_OBUF | NULL | NULL | DONE_OBUF.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | R<1> | controller_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | ACC<0>$Q | 3991 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | ACC<0>.Q | ACC<0> | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | R<1> | 4021 | PO | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | R<1> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | R<6> | controller_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | ACC<5>$Q | 3993 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | ACC<5>.Q | ACC<5> | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | R<6> | 4022 | PO | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | R<6> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | R<7> | controller_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | ACC<6>$Q | 3995 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | ACC<6>.Q | ACC<6> | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | R<7> | 4023 | PO | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | R<7> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | R<8> | controller_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | ACC<7>$Q | 3997 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | ACC<7>.Q | ACC<7> | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | R<8> | 4024 | PO | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | R<8> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | R<5> | controller_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | ACC<4>$Q | 3999 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | ACC<4>.Q | ACC<4> | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | R<5> | 4025 | PO | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | R<5> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | R<2> | controller_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | ACC<1>$Q | 4001 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | ACC<1>.Q | ACC<1> | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | R<2> | 4026 | PO | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | R<2> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | R<3> | controller_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | ACC<2>$Q | 4003 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | ACC<2>.Q | ACC<2> | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | R<3> | 4027 | PO | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | R<3> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | R<4> | controller_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | ACC<3>$Q | 4005 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | ACC<3>.Q | ACC<3> | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | R<4> | 4028 | PO | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | R<4> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | DONE | controller_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | DONE_OBUF | 4020 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | DONE_OBUF.Q | DONE_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | DONE | 4029 | PO | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | DONE | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | SoftPfbk | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D | controller_COPY_0_COPY_0 | 2181038080 | 5 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_4_IBUF | 4015 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_4_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<1> | 4009 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<1>.Q | State<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<8>_PIN_BUF_ | 4150 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<8> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D.UIM | 4030 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D.Q | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 4 | 0 | MC_EXPORT
+NODE | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D.EXP | 4142 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D.EXP | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D | 4 | 0 | MC_EXPORT
+
+SIGNAL_INSTANCE | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D.SI | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D | 0 | 5 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_4_IBUF | 4015 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_4_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<1> | 4009 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<1>.Q | State<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<8>_PIN_BUF_ | 4150 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<8> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D.D1 | 4098 | ? | 0 | 4096 | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D | NULL | NULL | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 1 | IV_TRUE | R<8>_PIN_BUF_
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D.D2 | 4099 | ? | 0 | 4096 | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D | NULL | NULL | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | M_4_IBUF
+OUTPUT_NODE_TYPE | 7 | 9 | MC_SI_EXPORT
+SIGNAL | NODE | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D.EXP | 4129 | ? | 0 | 0 | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D | NULL | NULL | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D.SI | 7 | 9 | MC_SI_EXPORT
+SPPTERM | 3 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_FALSE | State<1>
+
+SRFF_INSTANCE | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D.REG | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D.D | 4097 | ? | 0 | 0 | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D | NULL | NULL | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D.Q | 4100 | ? | 0 | 0 | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D | NULL | NULL | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | NULL | EXP0_ | controller_COPY_0_COPY_0 | 2147483648 | 14 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ST_IBUF | 3989 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | ST_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<5>_PIN_BUF_ | 4151 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<5> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<1> | 4009 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<1>.Q | State<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<2> | 4010 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<2>.Q | State<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<6>_PIN_BUF_ | 4148 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<6> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<8>_PIN_BUF_ | 4150 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<8> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_3_IBUF | 4014 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_3_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D.UIM | 4030 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D.Q | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<7>_PIN_BUF_ | 4149 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<7> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_2_IBUF | 4013 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | EXP9_.EXP | 4120 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | EXP9_.EXP | EXP9_ | 4 | 0 | MC_EXPORT
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<1>_PIN_BUF_ | 4147 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<1> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 4 | 0 | MC_EXPORT
+NODE | EXP0_.EXP | 4111 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | EXP0_.EXP | EXP0_ | 4 | 0 | MC_EXPORT
+
+SIGNAL_INSTANCE | EXP0_.SI | EXP0_ | 0 | 14 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ST_IBUF | 3989 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | ST_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<5>_PIN_BUF_ | 4151 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<5> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<1> | 4009 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<1>.Q | State<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<2> | 4010 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<2>.Q | State<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<6>_PIN_BUF_ | 4148 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<6> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<8>_PIN_BUF_ | 4150 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<8> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_3_IBUF | 4014 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_3_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D.UIM | 4030 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D.Q | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<7>_PIN_BUF_ | 4149 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<7> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_2_IBUF | 4013 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | EXP9_.EXP | 4120 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | EXP9_.EXP | EXP9_ | 4 | 0 | MC_EXPORT
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<1>_PIN_BUF_ | 4147 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<1> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 7 | 9 | MC_SI_EXPORT
+SIGNAL | NODE | EXP0_.EXP | 4101 | ? | 0 | 0 | EXP0_ | NULL | NULL | EXP0_.SI | 7 | 9 | MC_SI_EXPORT
+SPPTERM | 1 | IV_TRUE | EXP9_.EXP
+SPPTERM | 6 | IV_FALSE | ST_IBUF | IV_FALSE | State<3> | IV_FALSE | State<0> | IV_FALSE | State<1> | IV_FALSE | State<2> | IV_TRUE | R<8>_PIN_BUF_
+SPPTERM | 6 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_TRUE | M_3_IBUF | IV_FALSE | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D.UIM | IV_TRUE | R<1>_PIN_BUF_ | IV_TRUE | R<7>_PIN_BUF_
+SPPTERM | 6 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_FALSE | M_3_IBUF | IV_TRUE | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D.UIM | IV_TRUE | R<1>_PIN_BUF_ | IV_FALSE | R<7>_PIN_BUF_
+SPPTERM | 7 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_FALSE | M_2_IBUF | IV_TRUE | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D.UIM | IV_TRUE | R<1>_PIN_BUF_ | IV_FALSE | R<6>_PIN_BUF_ | IV_FALSE | R<7>_PIN_BUF_
+SPPTERM | 7 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_TRUE | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D.UIM | IV_TRUE | R<1>_PIN_BUF_ | IV_FALSE | R<6>_PIN_BUF_ | IV_FALSE | R<7>_PIN_BUF_ | IV_FALSE | R<5>_PIN_BUF_
+
+MACROCELL_INSTANCE | NULL | EXP1_ | controller_COPY_0_COPY_0 | 2147483648 | 11 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<6>_PIN_BUF_ | 4148 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<6> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<7>_PIN_BUF_ | 4149 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<7> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<5>_PIN_BUF_ | 4151 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<5> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_1_IBUF | 4012 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D.UIM | 4030 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D.Q | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_3_IBUF | 4014 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_3_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_2_IBUF | 4013 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | EXP2_.EXP | 4113 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | EXP2_.EXP | EXP2_ | 4 | 0 | MC_EXPORT
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<1>_PIN_BUF_ | 4147 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<1> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 4 | 0 | MC_EXPORT
+NODE | EXP1_.EXP | 4112 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | EXP1_.EXP | EXP1_ | 4 | 0 | MC_EXPORT
+
+SIGNAL_INSTANCE | EXP1_.SI | EXP1_ | 0 | 11 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<6>_PIN_BUF_ | 4148 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<6> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<7>_PIN_BUF_ | 4149 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<7> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<5>_PIN_BUF_ | 4151 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<5> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_1_IBUF | 4012 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D.UIM | 4030 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D.Q | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_3_IBUF | 4014 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_3_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_2_IBUF | 4013 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | EXP2_.EXP | 4113 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | EXP2_.EXP | EXP2_ | 4 | 0 | MC_EXPORT
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<1>_PIN_BUF_ | 4147 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<1> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 7 | 9 | MC_SI_EXPORT
+SIGNAL | NODE | EXP1_.EXP | 4102 | ? | 0 | 0 | EXP1_ | NULL | NULL | EXP1_.SI | 7 | 9 | MC_SI_EXPORT
+SPPTERM | 1 | IV_TRUE | EXP2_.EXP
+SPPTERM | 7 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_FALSE | M_1_IBUF | IV_FALSE | M_2_IBUF | IV_TRUE | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D.UIM | IV_TRUE | R<1>_PIN_BUF_ | IV_FALSE | R<7>_PIN_BUF_
+SPPTERM | 7 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_FALSE | M_1_IBUF | IV_TRUE | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D.UIM | IV_TRUE | R<1>_PIN_BUF_ | IV_FALSE | R<6>_PIN_BUF_ | IV_FALSE | R<7>_PIN_BUF_
+SPPTERM | 7 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_FALSE | M_2_IBUF | IV_FALSE | M_3_IBUF | IV_TRUE | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D.UIM | IV_TRUE | R<1>_PIN_BUF_ | IV_FALSE | R<6>_PIN_BUF_
+SPPTERM | 7 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_FALSE | M_2_IBUF | IV_TRUE | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D.UIM | IV_TRUE | R<1>_PIN_BUF_ | IV_FALSE | R<7>_PIN_BUF_ | IV_FALSE | R<5>_PIN_BUF_
+SPPTERM | 7 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_FALSE | M_3_IBUF | IV_TRUE | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D.UIM | IV_TRUE | R<1>_PIN_BUF_ | IV_FALSE | R<6>_PIN_BUF_ | IV_FALSE | R<5>_PIN_BUF_
+
+MACROCELL_INSTANCE | NULL | EXP2_ | controller_COPY_0_COPY_0 | 2147483648 | 10 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<6>_PIN_BUF_ | 4148 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<6> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<7>_PIN_BUF_ | 4149 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<7> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_2_IBUF | 4013 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_3_IBUF | 4014 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_3_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D.UIM | 4030 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D.Q | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<5>_PIN_BUF_ | 4151 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<5> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_1_IBUF | 4012 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<1>_PIN_BUF_ | 4147 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<1> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 4 | 0 | MC_EXPORT
+NODE | EXP2_.EXP | 4113 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | EXP2_.EXP | EXP2_ | 4 | 0 | MC_EXPORT
+
+SIGNAL_INSTANCE | EXP2_.SI | EXP2_ | 0 | 10 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<6>_PIN_BUF_ | 4148 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<6> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<7>_PIN_BUF_ | 4149 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<7> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_2_IBUF | 4013 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_3_IBUF | 4014 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_3_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D.UIM | 4030 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D.Q | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<5>_PIN_BUF_ | 4151 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<5> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_1_IBUF | 4012 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<1>_PIN_BUF_ | 4147 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<1> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 7 | 9 | MC_SI_EXPORT
+SIGNAL | NODE | EXP2_.EXP | 4103 | ? | 0 | 0 | EXP2_ | NULL | NULL | EXP2_.SI | 7 | 9 | MC_SI_EXPORT
+SPPTERM | 7 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_TRUE | M_2_IBUF | IV_TRUE | M_3_IBUF | IV_FALSE | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D.UIM | IV_TRUE | R<1>_PIN_BUF_ | IV_TRUE | R<6>_PIN_BUF_
+SPPTERM | 8 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_TRUE | M_1_IBUF | IV_TRUE | M_2_IBUF | IV_TRUE | M_3_IBUF | IV_FALSE | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D.UIM | IV_TRUE | R<1>_PIN_BUF_ | IV_TRUE | R<5>_PIN_BUF_
+SPPTERM | 8 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_TRUE | M_1_IBUF | IV_TRUE | M_2_IBUF | IV_FALSE | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D.UIM | IV_TRUE | R<1>_PIN_BUF_ | IV_TRUE | R<7>_PIN_BUF_ | IV_TRUE | R<5>_PIN_BUF_
+SPPTERM | 8 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_TRUE | M_1_IBUF | IV_TRUE | M_3_IBUF | IV_FALSE | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D.UIM | IV_TRUE | R<1>_PIN_BUF_ | IV_TRUE | R<6>_PIN_BUF_ | IV_TRUE | R<5>_PIN_BUF_
+SPPTERM | 8 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_TRUE | M_1_IBUF | IV_FALSE | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D.UIM | IV_TRUE | R<1>_PIN_BUF_ | IV_TRUE | R<6>_PIN_BUF_ | IV_TRUE | R<7>_PIN_BUF_ | IV_TRUE | R<5>_PIN_BUF_
+
+MACROCELL_INSTANCE | NULL | EXP3_ | controller_COPY_0_COPY_0 | 2147483648 | 6 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<8>_PIN_BUF_ | 4150 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<8> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<1> | 4009 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<1>.Q | State<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<2> | 4010 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<2>.Q | State<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<7>_PIN_BUF_ | 4149 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<7> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 4 | 0 | MC_EXPORT
+NODE | EXP3_.EXP | 4114 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | EXP3_.EXP | EXP3_ | 4 | 0 | MC_EXPORT
+
+SIGNAL_INSTANCE | EXP3_.SI | EXP3_ | 0 | 6 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<8>_PIN_BUF_ | 4150 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<8> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<1> | 4009 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<1>.Q | State<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<2> | 4010 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<2>.Q | State<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<7>_PIN_BUF_ | 4149 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<7> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 7 | 9 | MC_SI_EXPORT
+SIGNAL | NODE | EXP3_.EXP | 4104 | ? | 0 | 0 | EXP3_ | NULL | NULL | EXP3_.SI | 7 | 9 | MC_SI_EXPORT
+SPPTERM | 5 | IV_FALSE | State<3> | IV_FALSE | State<0> | IV_TRUE | State<1> | IV_FALSE | R<7>_PIN_BUF_ | IV_TRUE | R<8>_PIN_BUF_
+SPPTERM | 5 | IV_FALSE | State<3> | IV_FALSE | State<0> | IV_TRUE | State<2> | IV_FALSE | R<7>_PIN_BUF_ | IV_TRUE | R<8>_PIN_BUF_
+
+MACROCELL_INSTANCE | NULL | EXP4_ | controller_COPY_0_COPY_0 | 2147483648 | 11 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<1> | 4009 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<1>.Q | State<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<2> | 4010 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<2>.Q | State<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<6>_PIN_BUF_ | 4148 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<6> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<7>_PIN_BUF_ | 4149 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<7> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_2_IBUF | 4013 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_3_IBUF | 4014 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_3_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_1_IBUF | 4012 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | EXP3_.EXP | 4114 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | EXP3_.EXP | EXP3_ | 4 | 0 | MC_EXPORT
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<1>_PIN_BUF_ | 4147 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<1> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 4 | 0 | MC_EXPORT
+NODE | EXP4_.EXP | 4115 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | EXP4_.EXP | EXP4_ | 4 | 0 | MC_EXPORT
+
+SIGNAL_INSTANCE | EXP4_.SI | EXP4_ | 0 | 11 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<1> | 4009 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<1>.Q | State<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<2> | 4010 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<2>.Q | State<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<6>_PIN_BUF_ | 4148 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<6> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<7>_PIN_BUF_ | 4149 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<7> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_2_IBUF | 4013 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_3_IBUF | 4014 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_3_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_1_IBUF | 4012 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | EXP3_.EXP | 4114 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | EXP3_.EXP | EXP3_ | 4 | 0 | MC_EXPORT
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<1>_PIN_BUF_ | 4147 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<1> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 7 | 9 | MC_SI_EXPORT
+SIGNAL | NODE | EXP4_.EXP | 4105 | ? | 0 | 0 | EXP4_ | NULL | NULL | EXP4_.SI | 7 | 9 | MC_SI_EXPORT
+SPPTERM | 1 | IV_TRUE | EXP3_.EXP
+SPPTERM | 3 | IV_TRUE | State<3> | IV_TRUE | State<1> | IV_TRUE | R<7>_PIN_BUF_
+SPPTERM | 3 | IV_TRUE | State<3> | IV_TRUE | State<2> | IV_TRUE | R<7>_PIN_BUF_
+SPPTERM | 6 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_FALSE | M_1_IBUF | IV_TRUE | M_3_IBUF | IV_TRUE | R<1>_PIN_BUF_ | IV_FALSE | R<6>_PIN_BUF_
+SPPTERM | 6 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_TRUE | M_2_IBUF | IV_FALSE | M_3_IBUF | IV_TRUE | R<1>_PIN_BUF_ | IV_TRUE | R<6>_PIN_BUF_
+SPPTERM | 6 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_FALSE | M_2_IBUF | IV_TRUE | M_3_IBUF | IV_TRUE | R<1>_PIN_BUF_ | IV_FALSE | R<6>_PIN_BUF_
+
+MACROCELL_INSTANCE | NULL | EXP5_ | controller_COPY_0_COPY_0 | 2147483648 | 8 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<8>_PIN_BUF_ | 4150 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<8> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<1> | 4009 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<1>.Q | State<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<2> | 4010 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<2>.Q | State<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<7>_PIN_BUF_ | 4149 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<7> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | EXP6_.EXP | 4117 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | EXP6_.EXP | EXP6_ | 4 | 0 | MC_EXPORT
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<1>_PIN_BUF_ | 4147 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<1> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 4 | 0 | MC_EXPORT
+NODE | EXP5_.EXP | 4116 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | EXP5_.EXP | EXP5_ | 4 | 0 | MC_EXPORT
+
+SIGNAL_INSTANCE | EXP5_.SI | EXP5_ | 0 | 8 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<8>_PIN_BUF_ | 4150 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<8> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<1> | 4009 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<1>.Q | State<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<2> | 4010 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<2>.Q | State<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<7>_PIN_BUF_ | 4149 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<7> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | EXP6_.EXP | 4117 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | EXP6_.EXP | EXP6_ | 4 | 0 | MC_EXPORT
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<1>_PIN_BUF_ | 4147 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<1> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 7 | 9 | MC_SI_EXPORT
+SIGNAL | NODE | EXP5_.EXP | 4106 | ? | 0 | 0 | EXP5_ | NULL | NULL | EXP5_.SI | 7 | 9 | MC_SI_EXPORT
+SPPTERM | 1 | IV_TRUE | EXP6_.EXP
+SPPTERM | 4 | IV_TRUE | State<3> | IV_FALSE | State<0> | IV_TRUE | R<7>_PIN_BUF_ | IV_FALSE | R<8>_PIN_BUF_
+SPPTERM | 4 | IV_FALSE | State<0> | IV_TRUE | State<1> | IV_TRUE | R<7>_PIN_BUF_ | IV_FALSE | R<8>_PIN_BUF_
+SPPTERM | 4 | IV_FALSE | State<0> | IV_TRUE | State<2> | IV_TRUE | R<7>_PIN_BUF_ | IV_FALSE | R<8>_PIN_BUF_
+SPPTERM | 5 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_FALSE | R<1>_PIN_BUF_ | IV_TRUE | R<7>_PIN_BUF_ | IV_FALSE | R<8>_PIN_BUF_
+SPPTERM | 5 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_FALSE | R<1>_PIN_BUF_ | IV_FALSE | R<7>_PIN_BUF_ | IV_TRUE | R<8>_PIN_BUF_
+
+MACROCELL_INSTANCE | NULL | EXP6_ | controller_COPY_0_COPY_0 | 2147483648 | 7 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ST_IBUF | 3989 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | ST_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<8>_PIN_BUF_ | 4150 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<8> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<1> | 4009 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<1>.Q | State<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<2> | 4010 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<2>.Q | State<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<7>_PIN_BUF_ | 4149 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<7> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 4 | 0 | MC_EXPORT
+NODE | EXP6_.EXP | 4117 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | EXP6_.EXP | EXP6_ | 4 | 0 | MC_EXPORT
+
+SIGNAL_INSTANCE | EXP6_.SI | EXP6_ | 0 | 7 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ST_IBUF | 3989 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | ST_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<8>_PIN_BUF_ | 4150 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<8> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<1> | 4009 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<1>.Q | State<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<2> | 4010 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<2>.Q | State<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<7>_PIN_BUF_ | 4149 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<7> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 7 | 9 | MC_SI_EXPORT
+SIGNAL | NODE | EXP6_.EXP | 4107 | ? | 0 | 0 | EXP6_ | NULL | NULL | EXP6_.SI | 7 | 9 | MC_SI_EXPORT
+SPPTERM | 6 | IV_TRUE | ST_IBUF | IV_FALSE | State<3> | IV_FALSE | State<0> | IV_FALSE | State<1> | IV_FALSE | State<2> | IV_TRUE | R<7>_PIN_BUF_
+SPPTERM | 6 | IV_TRUE | State<3> | IV_FALSE | State<0> | IV_FALSE | State<1> | IV_FALSE | State<2> | IV_FALSE | R<7>_PIN_BUF_ | IV_TRUE | R<8>_PIN_BUF_
+
+MACROCELL_INSTANCE | NULL | EXP7_ | controller_COPY_0_COPY_0 | 2147483648 | 7 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<6>_PIN_BUF_ | 4148 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<6> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<5>_PIN_BUF_ | 4151 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<5> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_2_IBUF | 4013 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_1_IBUF | 4012 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<1>_PIN_BUF_ | 4147 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<1> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 4 | 0 | MC_EXPORT
+NODE | EXP7_.EXP | 4118 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | EXP7_.EXP | EXP7_ | 4 | 0 | MC_EXPORT
+
+SIGNAL_INSTANCE | EXP7_.SI | EXP7_ | 0 | 7 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<6>_PIN_BUF_ | 4148 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<6> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<5>_PIN_BUF_ | 4151 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<5> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_2_IBUF | 4013 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_1_IBUF | 4012 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<1>_PIN_BUF_ | 4147 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<1> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 7 | 9 | MC_SI_EXPORT
+SIGNAL | NODE | EXP7_.EXP | 4108 | ? | 0 | 0 | EXP7_ | NULL | NULL | EXP7_.SI | 7 | 9 | MC_SI_EXPORT
+SPPTERM | 6 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_FALSE | M_1_IBUF | IV_TRUE | M_2_IBUF | IV_TRUE | R<1>_PIN_BUF_ | IV_FALSE | R<6>_PIN_BUF_
+SPPTERM | 6 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_FALSE | M_1_IBUF | IV_FALSE | M_2_IBUF | IV_TRUE | R<1>_PIN_BUF_ | IV_TRUE | R<6>_PIN_BUF_
+SPPTERM | 6 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_TRUE | M_2_IBUF | IV_TRUE | R<1>_PIN_BUF_ | IV_FALSE | R<6>_PIN_BUF_ | IV_FALSE | R<5>_PIN_BUF_
+SPPTERM | 6 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_FALSE | M_2_IBUF | IV_TRUE | R<1>_PIN_BUF_ | IV_TRUE | R<6>_PIN_BUF_ | IV_FALSE | R<5>_PIN_BUF_
+
+MACROCELL_INSTANCE | NULL | EXP8_ | controller_COPY_0_COPY_0 | 2147483648 | 10 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ST_IBUF | 3989 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | ST_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<5>_PIN_BUF_ | 4151 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<5> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<1> | 4009 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<1>.Q | State<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<2> | 4010 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<2>.Q | State<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<6>_PIN_BUF_ | 4148 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<6> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_1_IBUF | 4012 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_2_IBUF | 4013 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<1>_PIN_BUF_ | 4147 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<1> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 4 | 0 | MC_EXPORT
+NODE | EXP8_.EXP | 4119 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | EXP8_.EXP | EXP8_ | 4 | 0 | MC_EXPORT
+
+SIGNAL_INSTANCE | EXP8_.SI | EXP8_ | 0 | 10 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ST_IBUF | 3989 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | ST_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<5>_PIN_BUF_ | 4151 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<5> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<1> | 4009 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<1>.Q | State<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<2> | 4010 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<2>.Q | State<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<6>_PIN_BUF_ | 4148 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<6> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_1_IBUF | 4012 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_2_IBUF | 4013 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<1>_PIN_BUF_ | 4147 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<1> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 7 | 9 | MC_SI_EXPORT
+SIGNAL | NODE | EXP8_.EXP | 4109 | ? | 0 | 0 | EXP8_ | NULL | NULL | EXP8_.SI | 7 | 9 | MC_SI_EXPORT
+SPPTERM | 6 | IV_FALSE | ST_IBUF | IV_FALSE | State<3> | IV_FALSE | State<0> | IV_FALSE | State<1> | IV_FALSE | State<2> | IV_TRUE | R<6>_PIN_BUF_
+SPPTERM | 7 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_TRUE | M_1_IBUF | IV_TRUE | M_2_IBUF | IV_TRUE | R<1>_PIN_BUF_ | IV_TRUE | R<6>_PIN_BUF_ | IV_TRUE | R<5>_PIN_BUF_
+SPPTERM | 7 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_TRUE | M_1_IBUF | IV_FALSE | M_2_IBUF | IV_TRUE | R<1>_PIN_BUF_ | IV_FALSE | R<6>_PIN_BUF_ | IV_TRUE | R<5>_PIN_BUF_
+
+MACROCELL_INSTANCE | NULL | EXP9_ | controller_COPY_0_COPY_0 | 2147483648 | 10 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<6>_PIN_BUF_ | 4148 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<6> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<7>_PIN_BUF_ | 4149 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<7> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<5>_PIN_BUF_ | 4151 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<5> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_2_IBUF | 4013 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D.UIM | 4030 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D.Q | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_1_IBUF | 4012 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_3_IBUF | 4014 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_3_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<1>_PIN_BUF_ | 4147 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<1> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 4 | 0 | MC_EXPORT
+NODE | EXP9_.EXP | 4120 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | EXP9_.EXP | EXP9_ | 4 | 0 | MC_EXPORT
+
+SIGNAL_INSTANCE | EXP9_.SI | EXP9_ | 0 | 10 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<6>_PIN_BUF_ | 4148 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<6> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<7>_PIN_BUF_ | 4149 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<7> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<5>_PIN_BUF_ | 4151 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<5> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_2_IBUF | 4013 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D.UIM | 4030 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D.Q | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_1_IBUF | 4012 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_3_IBUF | 4014 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_3_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<1>_PIN_BUF_ | 4147 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<1> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 7 | 9 | MC_SI_EXPORT
+SIGNAL | NODE | EXP9_.EXP | 4110 | ? | 0 | 0 | EXP9_ | NULL | NULL | EXP9_.SI | 7 | 9 | MC_SI_EXPORT
+SPPTERM | 7 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_FALSE | M_1_IBUF | IV_FALSE | M_2_IBUF | IV_FALSE | M_3_IBUF | IV_TRUE | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D.UIM | IV_TRUE | R<1>_PIN_BUF_
+SPPTERM | 7 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_FALSE | M_1_IBUF | IV_FALSE | M_3_IBUF | IV_TRUE | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D.UIM | IV_TRUE | R<1>_PIN_BUF_ | IV_FALSE | R<6>_PIN_BUF_
+SPPTERM | 7 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_TRUE | M_2_IBUF | IV_FALSE | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D.UIM | IV_TRUE | R<1>_PIN_BUF_ | IV_TRUE | R<6>_PIN_BUF_ | IV_TRUE | R<7>_PIN_BUF_
+SPPTERM | 7 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_FALSE | M_2_IBUF | IV_FALSE | M_3_IBUF | IV_TRUE | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D.UIM | IV_TRUE | R<1>_PIN_BUF_ | IV_FALSE | R<5>_PIN_BUF_
+
+MACROCELL_INSTANCE | NULL | EXP10_ | controller_COPY_0_COPY_0 | 2147483648 | 8 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<2>_PIN_BUF_ | 4152 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<2> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<3>_PIN_BUF_ | 4153 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<3> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<1> | 4009 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<1>.Q | State<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<2> | 4010 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<2>.Q | State<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | EXP11_.EXP | 4136 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | EXP11_.EXP | EXP11_ | 4 | 0 | MC_EXPORT
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<1>_PIN_BUF_ | 4147 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<1> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 4 | 0 | MC_EXPORT
+NODE | EXP10_.EXP | 4135 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | EXP10_.EXP | EXP10_ | 4 | 0 | MC_EXPORT
+
+SIGNAL_INSTANCE | EXP10_.SI | EXP10_ | 0 | 8 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<2>_PIN_BUF_ | 4152 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<2> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<3>_PIN_BUF_ | 4153 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<3> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<1> | 4009 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<1>.Q | State<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<2> | 4010 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<2>.Q | State<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | EXP11_.EXP | 4136 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | EXP11_.EXP | EXP11_ | 4 | 0 | MC_EXPORT
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<1>_PIN_BUF_ | 4147 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<1> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 7 | 9 | MC_SI_EXPORT
+SIGNAL | NODE | EXP10_.EXP | 4122 | ? | 0 | 0 | EXP10_ | NULL | NULL | EXP10_.SI | 7 | 9 | MC_SI_EXPORT
+SPPTERM | 1 | IV_TRUE | EXP11_.EXP
+SPPTERM | 4 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_TRUE | R<1>_PIN_BUF_ | IV_TRUE | R<2>_PIN_BUF_
+SPPTERM | 4 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_FALSE | R<1>_PIN_BUF_ | IV_TRUE | R<3>_PIN_BUF_
+SPPTERM | 4 | IV_FALSE | State<3> | IV_FALSE | State<0> | IV_TRUE | State<1> | IV_TRUE | R<3>_PIN_BUF_
+SPPTERM | 4 | IV_FALSE | State<3> | IV_FALSE | State<0> | IV_TRUE | State<2> | IV_TRUE | R<3>_PIN_BUF_
+SPPTERM | 5 | IV_TRUE | State<3> | IV_TRUE | State<0> | IV_FALSE | State<1> | IV_FALSE | State<2> | IV_TRUE | R<2>_PIN_BUF_
+
+MACROCELL_INSTANCE | NULL | EXP11_ | controller_COPY_0_COPY_0 | 2147483648 | 8 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<1> | 4009 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<1>.Q | State<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<2> | 4010 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<2>.Q | State<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ST_IBUF | 3989 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | ST_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_2_IBUF | 4017 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | N_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<3>_PIN_BUF_ | 4153 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<3> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<2>_PIN_BUF_ | 4152 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<2> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 4 | 0 | MC_EXPORT
+NODE | EXP11_.EXP | 4136 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | EXP11_.EXP | EXP11_ | 4 | 0 | MC_EXPORT
+
+SIGNAL_INSTANCE | EXP11_.SI | EXP11_ | 0 | 8 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<1> | 4009 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<1>.Q | State<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<2> | 4010 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<2>.Q | State<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ST_IBUF | 3989 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | ST_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_2_IBUF | 4017 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | N_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<3>_PIN_BUF_ | 4153 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<3> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<2>_PIN_BUF_ | 4152 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<2> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 7 | 9 | MC_SI_EXPORT
+SIGNAL | NODE | EXP11_.EXP | 4123 | ? | 0 | 0 | EXP11_ | NULL | NULL | EXP11_.SI | 7 | 9 | MC_SI_EXPORT
+SPPTERM | 5 | IV_TRUE | State<3> | IV_FALSE | State<0> | IV_FALSE | State<1> | IV_FALSE | State<2> | IV_TRUE | R<3>_PIN_BUF_
+SPPTERM | 6 | IV_TRUE | ST_IBUF | IV_FALSE | State<3> | IV_FALSE | State<0> | IV_FALSE | State<1> | IV_FALSE | State<2> | IV_TRUE | N_2_IBUF
+SPPTERM | 6 | IV_FALSE | ST_IBUF | IV_FALSE | State<3> | IV_FALSE | State<0> | IV_FALSE | State<1> | IV_FALSE | State<2> | IV_TRUE | R<2>_PIN_BUF_
+
+MACROCELL_INSTANCE | NULL | EXP12_ | controller_COPY_0_COPY_0 | 2147483648 | 8 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<1> | 4009 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<1>.Q | State<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<2> | 4010 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<2>.Q | State<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ST_IBUF | 3989 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | ST_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_3_IBUF | 4018 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | N_3_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<4>_PIN_BUF_ | 4154 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<4> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<3>_PIN_BUF_ | 4153 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<3> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 4 | 0 | MC_EXPORT
+NODE | EXP12_.EXP | 4137 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | EXP12_.EXP | EXP12_ | 4 | 0 | MC_EXPORT
+
+SIGNAL_INSTANCE | EXP12_.SI | EXP12_ | 0 | 8 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<1> | 4009 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<1>.Q | State<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<2> | 4010 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<2>.Q | State<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ST_IBUF | 3989 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | ST_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_3_IBUF | 4018 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | N_3_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<4>_PIN_BUF_ | 4154 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<4> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<3>_PIN_BUF_ | 4153 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<3> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 7 | 9 | MC_SI_EXPORT
+SIGNAL | NODE | EXP12_.EXP | 4124 | ? | 0 | 0 | EXP12_ | NULL | NULL | EXP12_.SI | 7 | 9 | MC_SI_EXPORT
+SPPTERM | 5 | IV_TRUE | State<3> | IV_FALSE | State<0> | IV_FALSE | State<1> | IV_FALSE | State<2> | IV_TRUE | R<4>_PIN_BUF_
+SPPTERM | 6 | IV_TRUE | ST_IBUF | IV_FALSE | State<3> | IV_FALSE | State<0> | IV_FALSE | State<1> | IV_FALSE | State<2> | IV_TRUE | N_3_IBUF
+SPPTERM | 6 | IV_FALSE | ST_IBUF | IV_FALSE | State<3> | IV_FALSE | State<0> | IV_FALSE | State<1> | IV_FALSE | State<2> | IV_TRUE | R<3>_PIN_BUF_
+
+MACROCELL_INSTANCE | NULL | EXP13_ | controller_COPY_0_COPY_0 | 2147483648 | 7 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<4>_PIN_BUF_ | 4154 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<4> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<1> | 4009 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<1>.Q | State<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<2> | 4010 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<2>.Q | State<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ST_IBUF | 3989 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | ST_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<5>_PIN_BUF_ | 4151 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<5> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 4 | 0 | MC_EXPORT
+NODE | EXP13_.EXP | 4138 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | EXP13_.EXP | EXP13_ | 4 | 0 | MC_EXPORT
+
+SIGNAL_INSTANCE | EXP13_.SI | EXP13_ | 0 | 7 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<4>_PIN_BUF_ | 4154 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<4> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<1> | 4009 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<1>.Q | State<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<2> | 4010 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<2>.Q | State<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ST_IBUF | 3989 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | ST_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<5>_PIN_BUF_ | 4151 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<5> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 7 | 9 | MC_SI_EXPORT
+SIGNAL | NODE | EXP13_.EXP | 4125 | ? | 0 | 0 | EXP13_ | NULL | NULL | EXP13_.SI | 7 | 9 | MC_SI_EXPORT
+SPPTERM | 5 | IV_TRUE | State<3> | IV_FALSE | State<0> | IV_FALSE | State<1> | IV_FALSE | State<2> | IV_TRUE | R<5>_PIN_BUF_
+SPPTERM | 6 | IV_FALSE | ST_IBUF | IV_FALSE | State<3> | IV_FALSE | State<0> | IV_FALSE | State<1> | IV_FALSE | State<2> | IV_TRUE | R<4>_PIN_BUF_
+
+MACROCELL_INSTANCE | NULL | EXP14_ | controller_COPY_0_COPY_0 | 2147483648 | 6 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ST_IBUF | 3989 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | ST_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<1> | 4009 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<1>.Q | State<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<2> | 4010 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<2>.Q | State<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_4_IBUF | 4019 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | N_4_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 4 | 0 | MC_EXPORT
+NODE | EXP14_.EXP | 4139 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | EXP14_.EXP | EXP14_ | 4 | 0 | MC_EXPORT
+
+SIGNAL_INSTANCE | EXP14_.SI | EXP14_ | 0 | 6 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ST_IBUF | 3989 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | ST_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<1> | 4009 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<1>.Q | State<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<2> | 4010 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<2>.Q | State<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_4_IBUF | 4019 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | N_4_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 7 | 9 | MC_SI_EXPORT
+SIGNAL | NODE | EXP14_.EXP | 4126 | ? | 0 | 0 | EXP14_ | NULL | NULL | EXP14_.SI | 7 | 9 | MC_SI_EXPORT
+SPPTERM | 6 | IV_TRUE | ST_IBUF | IV_FALSE | State<3> | IV_FALSE | State<0> | IV_FALSE | State<1> | IV_FALSE | State<2> | IV_TRUE | N_4_IBUF
+
+MACROCELL_INSTANCE | NULL | EXP15_ | controller_COPY_0_COPY_0 | 2147483648 | 12 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<6>_PIN_BUF_ | 4148 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<6> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<7>_PIN_BUF_ | 4149 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<7> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<8>_PIN_BUF_ | 4150 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<8> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<5>_PIN_BUF_ | 4151 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<5> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_2_IBUF | 4013 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_4_IBUF | 4015 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_4_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_3_IBUF | 4014 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_3_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_1_IBUF | 4012 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0>.EXP | 4145 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.EXP | State<0> | 4 | 0 | MC_EXPORT
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<1>_PIN_BUF_ | 4147 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<1> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 4 | 0 | MC_EXPORT
+NODE | EXP15_.EXP | 4146 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | EXP15_.EXP | EXP15_ | 4 | 0 | MC_EXPORT
+
+SIGNAL_INSTANCE | EXP15_.SI | EXP15_ | 0 | 12 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<6>_PIN_BUF_ | 4148 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<6> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<7>_PIN_BUF_ | 4149 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<7> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<8>_PIN_BUF_ | 4150 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<8> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<5>_PIN_BUF_ | 4151 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<5> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<3> | 4007 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<3>.Q | State<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0> | 4008 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.Q | State<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_2_IBUF | 4013 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_4_IBUF | 4015 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_4_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_3_IBUF | 4014 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_3_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M_1_IBUF | 4012 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | M_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State<0>.EXP | 4145 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | State<0>.EXP | State<0> | 4 | 0 | MC_EXPORT
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | R<1>_PIN_BUF_ | 4147 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<1> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 7 | 9 | MC_SI_EXPORT
+SIGNAL | NODE | EXP15_.EXP | 4133 | ? | 0 | 0 | EXP15_ | NULL | NULL | EXP15_.SI | 7 | 9 | MC_SI_EXPORT
+SPPTERM | 1 | IV_TRUE | State<0>.EXP
+SPPTERM | 7 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_TRUE | M_2_IBUF | IV_TRUE | M_3_IBUF | IV_TRUE | M_4_IBUF | IV_TRUE | R<1>_PIN_BUF_ | IV_TRUE | R<6>_PIN_BUF_
+SPPTERM | 7 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_TRUE | M_2_IBUF | IV_TRUE | M_3_IBUF | IV_TRUE | R<1>_PIN_BUF_ | IV_TRUE | R<6>_PIN_BUF_ | IV_TRUE | R<8>_PIN_BUF_
+SPPTERM | 7 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_TRUE | M_2_IBUF | IV_TRUE | M_4_IBUF | IV_TRUE | R<1>_PIN_BUF_ | IV_TRUE | R<6>_PIN_BUF_ | IV_TRUE | R<7>_PIN_BUF_
+SPPTERM | 7 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_TRUE | M_2_IBUF | IV_TRUE | R<1>_PIN_BUF_ | IV_TRUE | R<6>_PIN_BUF_ | IV_TRUE | R<7>_PIN_BUF_ | IV_TRUE | R<8>_PIN_BUF_
+SPPTERM | 8 | IV_FALSE | State<3> | IV_TRUE | State<0> | IV_TRUE | M_1_IBUF | IV_TRUE | R<1>_PIN_BUF_ | IV_TRUE | R<6>_PIN_BUF_ | IV_TRUE | R<7>_PIN_BUF_ | IV_TRUE | R<8>_PIN_BUF_ | IV_TRUE | R<5>_PIN_BUF_
+
+INPUT_INSTANCE | 0 | 0 | NULL | Pfbk_Created_R<1> | controller_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | R<1> | 4021 | PO | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | R<1> | 0 | 6 | OI_OUT
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | R<1>_PIN_BUF_ | 4147 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<1> | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | Pfbk_Created_R<6> | controller_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | R<6> | 4022 | PO | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | R<6> | 0 | 6 | OI_OUT
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | R<6>_PIN_BUF_ | 4148 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<6> | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | Pfbk_Created_R<7> | controller_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | R<7> | 4023 | PO | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | R<7> | 0 | 6 | OI_OUT
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | R<7>_PIN_BUF_ | 4149 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<7> | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | Pfbk_Created_R<8> | controller_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | R<8> | 4024 | PO | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | R<8> | 0 | 6 | OI_OUT
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | R<8>_PIN_BUF_ | 4150 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<8> | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | Pfbk_Created_R<5> | controller_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | R<5> | 4025 | PO | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | R<5> | 0 | 6 | OI_OUT
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | R<5>_PIN_BUF_ | 4151 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<5> | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | Pfbk_Created_R<2> | controller_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | R<2> | 4026 | PO | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | R<2> | 0 | 6 | OI_OUT
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | R<2>_PIN_BUF_ | 4152 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<2> | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | Pfbk_Created_R<3> | controller_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | R<3> | 4027 | PO | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | R<3> | 0 | 6 | OI_OUT
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | R<3>_PIN_BUF_ | 4153 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<3> | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | Pfbk_Created_R<4> | controller_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | R<4> | 4028 | PO | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | R<4> | 0 | 6 | OI_OUT
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | R<4>_PIN_BUF_ | 4154 | ? | 0 | 0 | controller_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_R<4> | 0 | 5 | II_IMUX
+
+FB_INSTANCE | FOOBAR1_ | controller_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 1 | EXP0_ | 1 | NULL | 0 | NULL | 0 | 2 | 49152
+FBPIN | 2 | ACC<7> | 1 | Pfbk_Created_R<8> | 1 | R<8> | 1 | 3 | 49152
+FBPIN | 3 | EXP1_ | 1 | CLK_IBUF | 1 | NULL | 0 | 5 | 57344
+FBPIN | 4 | EXP2_ | 1 | NULL | 0 | NULL | 0 | 4 | 49152
+FBPIN | 6 | EXP3_ | 1 | M_2_IBUF | 1 | NULL | 0 | 8 | 49152
+FBPIN | 7 | EXP4_ | 1 | NULL | 0 | NULL | 0 | 7 | 57344
+FBPIN | 8 | ACC<6> | 1 | Pfbk_Created_R<7> | 1 | R<7> | 1 | 9 | 49152
+FBPIN | 9 | EXP5_ | 1 | M_1_IBUF | 1 | NULL | 0 | 11 | 49152
+FBPIN | 10 | EXP6_ | 1 | M_3_IBUF | 1 | NULL | 0 | 12 | 49152
+FBPIN | 11 | NULL | 0 | N_3_IBUF | 1 | NULL | 0 | 13 | 49152
+FBPIN | 12 | NULL | 0 | N_4_IBUF | 1 | NULL | 0 | 14 | 49152
+FBPIN | 13 | EXP7_ | 1 | NULL | 0 | NULL | 0 | 18 | 49152
+FBPIN | 14 | ACC<5> | 1 | Pfbk_Created_R<6> | 1 | R<6> | 1 | 19 | 49152
+FBPIN | 15 | EXP8_ | 1 | NULL | 0 | NULL | 0 | 20 | 49152
+FBPIN | 18 | EXP9_ | 1 | NULL | 0 | NULL | 0
+
+FB_INSTANCE | FOOBAR2_ | controller_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 1 | ACC<1> | 1 | Pfbk_Created_R<2> | 1 | R<2> | 1 | 1 | 49152
+FBPIN | 2 | EXP10_ | 1 | NULL | 0 | NULL | 0 | 44 | 49152
+FBPIN | 3 | EXP11_ | 1 | NULL | 0 | NULL | 0 | 42 | 53248
+FBPIN | 4 | ACC<2> | 1 | Pfbk_Created_R<3> | 1 | R<3> | 1 | 43 | 49152
+FBPIN | 5 | EXP12_ | 1 | NULL | 0 | NULL | 0 | 40 | 53248
+FBPIN | 6 | EXP13_ | 1 | NULL | 0 | NULL | 0 | 39 | 51200
+FBPIN | 7 | ACC<3> | 1 | Pfbk_Created_R<4> | 1 | R<4> | 1 | 38 | 49152
+FBPIN | 8 | EXP14_ | 1 | ST_IBUF | 1 | NULL | 0 | 37 | 49152
+FBPIN | 9 | State<3> | 1 | M_4_IBUF | 1 | NULL | 0 | 36 | 49152
+FBPIN | 10 | ACC<4> | 1 | Pfbk_Created_R<5> | 1 | R<5> | 1 | 35 | 49152
+FBPIN | 11 | State<2> | 1 | N_2_IBUF | 1 | NULL | 0 | 34 | 49152
+FBPIN | 12 | DONE_OBUF | 1 | NULL | 0 | DONE | 1 | 33 | 49152
+FBPIN | 13 | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D | 1 | N_1_IBUF | 1 | NULL | 0 | 29 | 49152
+FBPIN | 14 | State<1> | 1 | NULL | 0 | NULL | 0 | 28 | 49152
+FBPIN | 15 | ACC<0> | 1 | Pfbk_Created_R<1> | 1 | R<1> | 1 | 27 | 49152
+FBPIN | 16 | State<0> | 1 | NULL | 0 | NULL | 0 | 26 | 49152
+FBPIN | 17 | EXP15_ | 1 | NULL | 0 | NULL | 0 | 25 | 49152
+FBPIN | 18 | ACC<8> | 1 | NULL | 0 | NULL | 0
+
+FB_INSTANCE | INPUTPINS_FOOBAR3_ | controller_COPY_0_COPY_0 | 0 | 0 | 0
+
+BUSINFO | M<4:1> | 4 | 0 | 0 | M<1> | 3 | M<2> | 2 | M<3> | 1 | M<4> | 0
+BUSINFO | N<4:1> | 4 | 0 | 0 | N<1> | 3 | N<2> | 2 | N<3> | 1 | N<4> | 0
+BUSINFO | R<8:1> | 8 | 0 | 1 | R<1> | 7 | R<2> | 6 | R<3> | 5 | R<4> | 4 | R<5> | 3 | R<6> | 2 | R<7> | 1 | R<8> | 0
+
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 0 | R<7> | 9 | 1 | M<1> | 11 | 2 | State<3> | NULL | 3 | R<5> | 35 | 4 | M<2> | 8
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 5 | M<3> | 12 | 6 | ST | 37 | 7 | State<0> | NULL | 8 | State<1> | NULL | 9 | State<2> | NULL
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 10 | Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000/Madd_ACC_8_4_add0000_Mxor_Result<3>__xor0000_D.UIM | NULL | 11 | ACC<8> | NULL | 21 | R<6> | 19 | 23 | R<1> | 27 | 24 | R<8> | 3
+
+FB_IMUX_INDEX | FOOBAR1_ | 36 | 37 | 999 | 39 | 40 | 41 | 42 | 999 | 999 | 999 | 999 | 999 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 57 | -1 | 59 | 60 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1
+
+
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 0 | R<7> | 9 | 1 | M<1> | 11 | 2 | M<4> | 36 | 3 | R<5> | 35 | 4 | M<2> | 8
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 5 | M<3> | 12 | 6 | ST | 37 | 7 | N<2> | 34 | 8 | State<3> | NULL | 9 | N<3> | 13
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 10 | R<4> | 38 | 11 | State<0> | NULL | 12 | State<1> | NULL | 13 | N<4> | 14 | 14 | State<2> | NULL
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 15 | N<1> | 29 | 16 | ACC<8> | NULL | 21 | R<6> | 19 | 23 | R<1> | 27 | 24 | R<8> | 3
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 26 | R<3> | 43 | 32 | R<2> | 1
+
+FB_IMUX_INDEX | FOOBAR2_ | 36 | 37 | 38 | 39 | 40 | 41 | 42 | 43 | 999 | 45 | 46 | 999 | 999 | 49 | 999 | 51 | 999 | -1 | -1 | -1 | -1 | 57 | -1 | 59 | 60 | -1 | 62 | -1 | -1 | -1 | -1 | -1 | 68 | -1 | -1 | -1
+
+
+GLOBAL_FCLK | FCLKIO_0 | 0 | 0

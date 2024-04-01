@@ -1,0 +1,91 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to /home/gage/Documents/ECE3561Proj3/ECE3561Proj3/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+Parameter xsthdpdir set to /home/gage/Documents/ECE3561Proj3/ECE3561Proj3/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/code.vhd" in Library work.
+Entity <custom_shift_reg> compiled.
+Entity <custom_shift_reg> (Architecture <behavioral>) compiled.
+ERROR:HDLParsers:3312 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/code.vhd" Line 45. Undefined symbol 'STD_LOGIC_VECTOR'.
+ERROR:HDLParsers:1209 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/code.vhd" Line 45. STD_LOGIC_VECTOR: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/code.vhd" Line 46. Undefined symbol 'std_logic'.
+ERROR:HDLParsers:1209 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/code.vhd" Line 46. std_logic: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/code.vhd" Line 47. Undefined symbol 'std_logic_vector'.
+ERROR:HDLParsers:1209 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/code.vhd" Line 47. std_logic_vector: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3010 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/code.vhd" Line 52. Entity parallel_adder does not exist.
+ERROR:HDLParsers:3312 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/code.vhd" Line 54. Undefined symbol 'X'.
+ERROR:HDLParsers:1209 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/code.vhd" Line 54. X: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/code.vhd" Line 54. Undefined symbol 'Y'.
+ERROR:HDLParsers:1209 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/code.vhd" Line 54. Y: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/code.vhd" Line 54. Undefined symbol 'C_in'.
+ERROR:HDLParsers:1209 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/code.vhd" Line 54. C_in: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/code.vhd" Line 55. Undefined symbol 'std_logic_vector'.
+ERROR:HDLParsers:1209 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/code.vhd" Line 55. std_logic_vector: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/code.vhd" Line 57. Undefined symbol 'temp_sum'.
+ERROR:HDLParsers:3312 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/code.vhd" Line 58. Undefined symbol 'sum'.
+ERROR:HDLParsers:1209 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/code.vhd" Line 58. temp_sum: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/code.vhd" Line 59. Undefined symbol 'C_out'.
+WARNING:HDLParsers:1406 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/code.vhd" Line 54. No sensitivity list and no wait in the process
+ERROR:HDLParsers:3312 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/code.vhd" Line 66. Undefined symbol 'std_logic'.
+ERROR:HDLParsers:1209 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/code.vhd" Line 66. std_logic: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3010 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/code.vhd" Line 71. Entity system_controller does not exist.
+ERROR:HDLParsers:3312 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/code.vhd" Line 73. Undefined symbol 'clk'.
+ERROR:HDLParsers:1209 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/code.vhd" Line 73. clk: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/code.vhd" Line 73. Undefined symbol 'start'.
+ERROR:HDLParsers:1209 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/code.vhd" Line 73. start: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/code.vhd" Line 76. Undefined symbol 'rising_edge'.
+ERROR:HDLParsers:1209 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/code.vhd" Line 76. rising_edge: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/code.vhd" Line 87. Undefined symbol 'done'.
+ERROR:HDLParsers:164 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/code.vhd" Line 87. parse error, unexpected WHEN, expecting SEMICOLON
+WARNING:HDLParsers:1406 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/code.vhd" Line 73. No sensitivity list and no wait in the process
+ERROR:HDLParsers:3312 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/code.vhd" Line 94. Undefined symbol 'std_logic'.
+ERROR:HDLParsers:1209 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/code.vhd" Line 94. std_logic: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/code.vhd" Line 95. Undefined symbol 'std_logic_vector'.
+ERROR:HDLParsers:1209 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/code.vhd" Line 95. std_logic_vector: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3010 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/code.vhd" Line 101. Entity multiplier does not exist.
+ERROR:HDLParsers:3312 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/code.vhd" Line 102. Undefined symbol 'std_logic_vector'.
+ERROR:HDLParsers:1209 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/code.vhd" Line 102. std_logic_vector: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/code.vhd" Line 104. Undefined symbol 'clk'.
+ERROR:HDLParsers:1209 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/code.vhd" Line 104. clk: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/code.vhd" Line 106. Undefined symbol 'rising_edge'.
+ERROR:HDLParsers:1209 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/code.vhd" Line 106. rising_edge: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/code.vhd" Line 107. Undefined symbol 'start'.
+ERROR:HDLParsers:1209 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/code.vhd" Line 107. start: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/code.vhd" Line 108. Undefined symbol 'intermediate_result'.
+ERROR:HDLParsers:3312 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/code.vhd" Line 109. Undefined symbol 'done'.
+ERROR:HDLParsers:1209 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/code.vhd" Line 109. done: Undefined symbol (last report in this block)
+WARNING:HDLParsers:1406 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/code.vhd" Line 104. No sensitivity list and no wait in the process
+ERROR:HDLParsers:3312 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/code.vhd" Line 115. Undefined symbol 'result'.
+ERROR:HDLParsers:3312 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/code.vhd" Line 115. Undefined symbol 'intermediate_result'.
+ERROR:HDLParsers:1209 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/code.vhd" Line 115. intermediate_result: Undefined symbol (last report in this block)
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> 
+
+
+Total memory usage is 461436 kilobytes
+
+Number of errors   :   49 (   0 filtered)
+Number of warnings :    4 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
