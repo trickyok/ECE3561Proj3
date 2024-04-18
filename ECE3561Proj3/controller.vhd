@@ -23,30 +23,19 @@ use IEEE.STD_LOGIC_ARITH.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity controller is
-    Port ( CLK	: in STD_LOGIC;
-			  M, N : in  STD_LOGIC_VECTOR (4 downto 1);
-           ST : in  STD_LOGIC;
-           DONE : out  STD_LOGIC;
-			  R : out  STD_LOGIC_VECTOR (8 downto 1));
+    Port ( CLK	: in 	STD_LOGIC;
+			  M, N: in  STD_LOGIC_VECTOR (4 downto 1);
+           ST 	: in  STD_LOGIC;
+           DONE: out STD_LOGIC;
+			  R 	: out STD_LOGIC_VECTOR (8 downto 1));
 end controller;
 
-entity shift_register is
-		Port ( CLK	: in STD_LOGIC;
-			  M, N : in  STD_LOGIC_VECTOR (4 downto 1);
-           ST : in  STD_LOGIC;
-           DONE : out  STD_LOGIC;
-			  R : out  STD_LOGIC_VECTOR (8 downto 1));
-end shift_register;
+
 
 architecture Behavioral of controller is
 	signal State: integer range 0 to 9;
 	signal ACC: std_logic_vector(8 downto 0);		-- accumulator
 	alias Z: std_logic is ACC(0);						-- Z is bit 0 of ACC
-	
-architecture Behavioural of shift_register is
-	signal State:
-	signal ACC:
-	alias Z:
 	
 begin
 		R <= ACC(7 downto 0);
@@ -78,6 +67,4 @@ begin
 		end process;
 		Done <= '1' when State = 9 else '0';
 
-
 end Behavioral;
-

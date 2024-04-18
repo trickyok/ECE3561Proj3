@@ -114,3 +114,21 @@ begin
   end process;
   result <= intermediate_result;
 end architecture behavioral;
+
+-- Shift Register
+entity shift_register is
+	Port ( CLK	: in 	STD_LOGIC;
+			  M, N: in  STD_LOGIC_VECTOR (4 downto 1);
+           ST 	: in  STD_LOGIC;
+           DONE: out STD_LOGIC;
+			  R 	: out STD_LOGIC_VECTOR (8 downto 1));
+end entity shift_register;
+
+architecture behavioral of shift_register is
+	signal State: integer range 0 to 9;
+	signal ACC: STD_LOGIC_VECTOR(8 downto 0);
+	alias Z: STD_LOGIC is ACC(0);
+	
+begin
+	
+end Behavioral;

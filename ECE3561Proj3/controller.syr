@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total CPU time to Xst completion: 0.07 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total CPU time to Xst completion: 0.07 secs
  
 --> 
 Reading design: controller.prj
@@ -78,149 +78,26 @@ wysiwyg                            : NO
 *                          HDL Compilation                              *
 =========================================================================
 Compiling vhdl file "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/controller.vhd" in Library work.
-Architecture behavioral of Entity controller is up to date.
-
-=========================================================================
-*                     Design Hierarchy Analysis                         *
-=========================================================================
-Analyzing hierarchy for entity <controller> in library <work> (architecture <behavioral>).
-
-
-=========================================================================
-*                            HDL Analysis                               *
-=========================================================================
-Analyzing Entity <controller> in library <work> (Architecture <behavioral>).
-Entity <controller> analyzed. Unit <controller> generated.
-
-
-=========================================================================
-*                           HDL Synthesis                               *
-=========================================================================
-
-Performing bidirectional port resolution...
-
-Synthesizing Unit <controller>.
-    Related source file is "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/controller.vhd".
-    Found 9-bit register for signal <ACC>.
-    Found 1-bit 10-to-1 multiplexer for signal <ACC_0$mux0000> created at line 44.
-    Found 1-bit 10-to-1 multiplexer for signal <ACC_1$mux0000> created at line 44.
-    Found 1-bit 10-to-1 multiplexer for signal <ACC_2$mux0000> created at line 44.
-    Found 1-bit 10-to-1 multiplexer for signal <ACC_3$mux0000> created at line 44.
-    Found 1-bit 10-to-1 multiplexer for signal <ACC_4$mux0000> created at line 44.
-    Found 1-bit 10-to-1 multiplexer for signal <ACC_5$mux0000> created at line 44.
-    Found 1-bit 10-to-1 multiplexer for signal <ACC_6$mux0000> created at line 44.
-    Found 1-bit 10-to-1 multiplexer for signal <ACC_7$mux0000> created at line 44.
-    Found 5-bit adder for signal <ACC_8_4$add0000> created at line 53.
-    Found 4-bit register for signal <State>.
-    Found 4-bit adder for signal <State$addsub0000>.
-    Found 4-bit 10-to-1 multiplexer for signal <State$mux0000> created at line 44.
-    Summary:
-	inferred   9 D-type flip-flop(s).
-	inferred   2 Adder/Subtractor(s).
-Unit <controller> synthesized.
-
-INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
-
-=========================================================================
-HDL Synthesis Report
-
-Macro Statistics
-# Adders/Subtractors                                   : 2
- 4-bit adder                                           : 1
- 5-bit adder                                           : 1
-# Registers                                            : 10
- 1-bit register                                        : 9
- 4-bit register                                        : 1
-# Multiplexers                                         : 9
- 1-bit 10-to-1 multiplexer                             : 8
- 4-bit 10-to-1 multiplexer                             : 1
-
-=========================================================================
-
-=========================================================================
-*                       Advanced HDL Synthesis                          *
-=========================================================================
-
-
-=========================================================================
-Advanced HDL Synthesis Report
-
-Macro Statistics
-# Adders/Subtractors                                   : 2
- 4-bit adder                                           : 1
- 5-bit adder                                           : 1
-# Registers                                            : 9
- Flip-Flops                                            : 9
-# Multiplexers                                         : 9
- 1-bit 10-to-1 multiplexer                             : 8
- 4-bit 10-to-1 multiplexer                             : 1
-
-=========================================================================
-
-=========================================================================
-*                         Low Level Synthesis                           *
-=========================================================================
-
-Optimizing unit <controller> ...
-  implementation constraint: INIT=r	 : State_3
-  implementation constraint: INIT=r	 : State_0
-  implementation constraint: INIT=r	 : State_1
-  implementation constraint: INIT=r	 : State_2
-
-=========================================================================
-*                           Partition Report                            *
-=========================================================================
-
-Partition Implementation Status
--------------------------------
-
-  No Partitions were found in this design.
-
--------------------------------
-
-=========================================================================
-*                            Final Report                               *
-=========================================================================
-Final Results
-RTL Top Level Output File Name     : controller.ngr
-Top Level Output File Name         : controller
-Output Format                      : NGC
-Optimization Goal                  : Speed
-Keep Hierarchy                     : Yes
-Target Technology                  : XC9500 CPLDs
-Macro Preserve                     : YES
-XOR Preserve                       : YES
-wysiwyg                            : NO
-
-Design Statistics
-# IOs                              : 19
-
-Cell Usage :
-# BELS                             : 311
-#      AND2                        : 87
-#      AND3                        : 28
-#      AND4                        : 3
-#      INV                         : 98
-#      OR2                         : 77
-#      OR3                         : 6
-#      XOR2                        : 12
-# FlipFlops/Latches                : 13
-#      FD                          : 13
-# IO Buffers                       : 19
-#      IBUF                        : 10
-#      OBUF                        : 9
-=========================================================================
-
-
-Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 4.00 secs
- 
+Entity <controller> compiled.
+ERROR:HDLParsers:3312 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/controller.vhd" Line 34. Undefined symbol 'STD_LOGIC'.
+ERROR:HDLParsers:1209 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/controller.vhd" Line 34. STD_LOGIC: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/controller.vhd" Line 35. Undefined symbol 'STD_LOGIC_VECTOR'.
+ERROR:HDLParsers:1209 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/controller.vhd" Line 35. STD_LOGIC_VECTOR: Undefined symbol (last report in this block)
+Entity <controller> (Architecture <behavioral>) compiled.
+ERROR:HDLParsers:3010 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/controller.vhd" Line 78. Entity shift_register does not exist.
+ERROR:HDLParsers:3312 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/controller.vhd" Line 80. Undefined symbol 'STD_LOGIC_VECTOR'.
+ERROR:HDLParsers:1209 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/controller.vhd" Line 80. STD_LOGIC_VECTOR: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/controller.vhd" Line 81. Undefined symbol 'STD_LOGIC'.
+ERROR:HDLParsers:1209 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/controller.vhd" Line 81. STD_LOGIC: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/controller.vhd" Line 81. Undefined symbol 'ACC'.
+ERROR:HDLParsers:1209 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/controller.vhd" Line 81. ACC: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3535 - "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/controller.vhd" Line 81. Could not find subtype for alias declaration.
 --> 
 
 
-Total memory usage is 502856 kilobytes
+Total memory usage is 472848 kilobytes
 
-Number of errors   :    0 (   0 filtered)
+Number of errors   :   12 (   0 filtered)
 Number of warnings :    0 (   0 filtered)
-Number of infos    :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
 

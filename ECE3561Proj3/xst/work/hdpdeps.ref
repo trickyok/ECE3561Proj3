@@ -1,4 +1,4 @@
-V3 12
+V3 14
 FL /home/gage/Documents/ECE3561Proj3/ECE3561Proj3/code.vhd 2024/03/28.15:54:22 P.20131013
 EN work/custom_shift_reg 0 \
       FL /home/gage/Documents/ECE3561Proj3/ECE3561Proj3/code.vhd \
@@ -27,6 +27,11 @@ EN work/controller 1711655925 \
       FL /home/gage/Documents/ECE3561Proj3/ECE3561Proj3/controller.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
+EN work/shift_register 0 \
+      FL /home/gage/Documents/ECE3561Proj3/ECE3561Proj3/controller.vhd
 AR work/controller/Behavioral 1711655926 \
       FL /home/gage/Documents/ECE3561Proj3/ECE3561Proj3/controller.vhd \
       EN work/controller 1711655925
+AR work/shift_register/Behavioural 0 \
+      FL /home/gage/Documents/ECE3561Proj3/ECE3561Proj3/controller.vhd \
+      EN work/shift_register 0
