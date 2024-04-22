@@ -1,0 +1,48 @@
+----------------------------------------------------------------------------------
+-- Company: 
+-- Engineer: 
+-- 
+-- Create Date:    16:55:49 04/19/2024 
+-- Design Name: 
+-- Module Name:    nBitAdder - Behavioral 
+-- Project Name: 
+-- Target Devices: 
+-- Tool versions: 
+-- Description: 
+--
+-- Dependencies: 
+--
+-- Revision: 
+-- Revision 0.01 - File Created
+-- Additional Comments: 
+--
+----------------------------------------------------------------------------------
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+use IEEE.NUMERIC_STD.ALL;
+
+-- Uncomment the following library declaration if instantiating
+-- any Xilinx primitives in this code.
+--library UNISIM;
+--use UNISIM.VComponents.all;
+
+entity nBitAdder is
+generic (N: integer : = 4);
+port(
+		X: in std_logic_vector(N-I downto 0); -- N bit Addend x 
+		Y: in std_logic_vector(N-I downto 0); -- N bit Augend y
+		S: out std _logic_ vector(N downto 0)
+		-- N+ I bit result, includes carry
+		);
+end nBitAdder;
+
+
+architecture Behavioral of nBitAdder is
+
+begin
+	S <= std_logic_vector((°' & UNSIGNED(X)) + UNSIGNED(Y));
+end Behavioral;
+

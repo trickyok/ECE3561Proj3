@@ -1,0 +1,62 @@
+----------------------------------------------------------------------------------
+-- Company: 
+-- Engineer: 
+-- 
+-- Create Date:    16:47:11 04/19/2024 
+-- Design Name: 
+-- Module Name:    shiftLoadRegister - Behavioral 
+-- Project Name: 
+-- Target Devices: 
+-- Tool versions: 
+-- Description: 
+--
+-- Dependencies: 
+--
+-- Revision: 
+-- Revision 0.01 - File Created
+-- Additional Comments: 
+--
+----------------------------------------------------------------------------------
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+--use IEEE.NUMERIC_STD.ALL;
+
+-- Uncomment the following library declaration if instantiating
+-- any Xilinx primitives in this code.
+--library UNISIM;
+--use UNISIM.VComponents.all;
+-- May have to add sli, sri, s0, s1 depending on implementation
+entity shiftLoadRegisterN is
+	generic (N: integer : = 4);
+	port (Din: in std_logic_vector(N-I downto 0); --N-bit input
+			Dout: out std_logic_vector(N-| downto 0); --N-bit output
+			Clk: in std_logic;								--Clock (rising edge)
+			Load: in std_logic;								-- Load enable
+			Shift: in std_logic;							--Shift enable
+			Clear: in std_logic;								-- Clear enable
+			Serln: in std_logic								--Serial input
+			);
+end shiftLoadRegisterN;
+
+architecture Behavioral of shiftLoadRegisterN is
+
+signal Dinternal: std_logic_vector(N-I downto 0); -- Internal state begin
+
+process (Clk)
+	begin
+		if (rising_ edge(Clk)) then
+			if (Clear = 'I') then
+				Dinternal <= (others => '0');				-- Clear
+			elsif (Load = 'I') then
+				Dinternal <= Din;-- Load
+			elsif (Shift = 'I') then
+				Dinternal <= Serln & Dinternal(N-| downto I); -- Shift
+			end if;
+		end if;
+	end process;
+	Dout <= Dinternal;	-- Drive outputs **
+end Behavioral;
+

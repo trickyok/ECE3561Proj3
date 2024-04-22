@@ -22,16 +22,14 @@ EN work/multiplier 0 \
 AR work/multiplier/behavioral 0 \
       FL /home/gage/Documents/ECE3561Proj3/ECE3561Proj3/code.vhd \
       EN work/multiplier 0
-FL /home/gage/Documents/ECE3561Proj3/ECE3561Proj3/controller.vhd 2024/03/28.15:50:08 P.20131013
-EN work/controller 1711655925 \
-      FL /home/gage/Documents/ECE3561Proj3/ECE3561Proj3/controller.vhd \
-      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
-      PB ieee/STD_LOGIC_UNSIGNED 1381692179
-EN work/shift_register 0 \
-      FL /home/gage/Documents/ECE3561Proj3/ECE3561Proj3/controller.vhd
-AR work/controller/Behavioral 1711655926 \
-      FL /home/gage/Documents/ECE3561Proj3/ECE3561Proj3/controller.vhd \
-      EN work/controller 1711655925
+FL /home/gage/Documents/ECE3561Proj3/ECE3561Proj3/controller.vhd 2024/04/18.17:13:55 P.20131013
 AR work/shift_register/Behavioural 0 \
       FL /home/gage/Documents/ECE3561Proj3/ECE3561Proj3/controller.vhd \
       EN work/shift_register 0
+EN work/controller 1713804571 \
+      FL /home/gage/Documents/ECE3561Proj3/ECE3561Proj3/controller.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/controller/Behavioral 1713804572 \
+      FL /home/gage/Documents/ECE3561Proj3/ECE3561Proj3/controller.vhd \
+      EN work/controller 1713804571

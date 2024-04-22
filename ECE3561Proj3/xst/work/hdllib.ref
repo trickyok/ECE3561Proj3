@@ -1,4 +1,4 @@
 AR custom_shift_reg behavioral /home/gage/Documents/ECE3561Proj3/ECE3561Proj3/code.vhd sub00/vhpl03 1711655950
-EN controller NULL /home/gage/Documents/ECE3561Proj3/ECE3561Proj3/controller.vhd sub00/vhpl00 1713454771
-AR controller behavioral /home/gage/Documents/ECE3561Proj3/ECE3561Proj3/controller.vhd sub00/vhpl01 1713454772
+EN controller NULL /home/gage/Documents/ECE3561Proj3/ECE3561Proj3/controller.vhd sub00/vhpl00 1713804571
+AR controller behavioral /home/gage/Documents/ECE3561Proj3/ECE3561Proj3/controller.vhd sub00/vhpl01 1713804572
 EN custom_shift_reg NULL /home/gage/Documents/ECE3561Proj3/ECE3561Proj3/code.vhd sub00/vhpl02 1711655949

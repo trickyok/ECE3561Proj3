@@ -127,8 +127,96 @@ end entity shift_register;
 architecture behavioral of shift_register is
 	signal State: integer range 0 to 9;
 	signal ACC: STD_LOGIC_VECTOR(8 downto 0);
-	alias Z: STD_LOGIC is ACC(0);
+	alias Z: STD_LOGIC is ACC(0);	
+	
+	begin
+		while (State < 9)
+			ACC(State) = ACC(State + 1);
+			State++;
+		end while
+	
+		ACC(9) = Z;
+	end process
+	
+end architecture behavioral;
+
+
+-- Counter
+entity counter is
+generic (N: integer : = 4);
+port(	Q: out std_logic_vector(N-I downto 0); -- N bit Addend x 
+		ENT: in std_logic;
+		CLR: in std_logic;
+		CLK: in std_logic;
+		);
+end entity counter;
+
+architecture behavioral of counter is
+	signal CNT: std_logic_vector(N-I downto 0); -- Internal state begin
+	process(CIk)
+		begin
+			if rising_edge(Clk) then
+				if CLR = '1' then
+					CNT <= to_unsigned(0,N);
+				elsif ENT = '1' then
+					CNT <= std_logic_vector(unsigned(CNT) + 1);
+				end if;
+			end if;
+	end process;
 	
 begin
-	
+
+end behavioral;
+
+
+-- Shift Load Register N
+entity shiftLoadRegisterN is
+	generic (N: integer : = 4);
+	port (Din: in std_logic_vector(N-I downto 0); --N-bit input
+			Dout: out std_logic_vector(N-| downto 0); --N-bit output
+			Clk: in std_logic;								--Clock (rising edge)
+			Load: in std_logic;								-- Load enable
+			Shift: in std_logic;							--Shift enable
+			Clear: in std_logic;								-- Clear enable
+			Serln: in std_logic								--Serial input
+			);
+end shiftLoadRegisterN;
+
+architecture Behavioral of shiftLoadRegisterN is
+
+signal Dinternal: std_logic_vector(N-I downto 0); -- Internal state begin
+
+process (Clk)
+	begin
+		if (rising_ edge(Clk)) then
+			if (Clear = 'I') then
+				Dinternal <= (others => '0');				-- Clear
+			elsif (Load = 'I') then
+				Dinternal <= Din;-- Load
+			elsif (Shift = 'I') then
+				Dinternal <= Serln & Dinternal(N-| downto I); -- Shift
+			end if;
+		end if;
+	end process;
+	Dout <= Dinternal;	-- Drive outputs **
 end Behavioral;
+
+
+-- N Bit Adder
+entity nBitAdder is
+generic (N: integer : = 4);
+port(
+		X: in std_logic_vector(N-I downto 0); -- N bit Addend x 
+		Y: in std_logic_vector(N-I downto 0); -- N bit Augend y
+		S: out std _logic_ vector(N downto 0)
+		-- N+ I bit result, includes carry
+		);
+end nBitAdder;
+
+
+architecture Behavioral of nBitAdder is
+
+begin
+	S <= std_logic_vector((°' & UNSIGNED(X)) + UNSIGNED(Y));
+end Behavioral;
+ 

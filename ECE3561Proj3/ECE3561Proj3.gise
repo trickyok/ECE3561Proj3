@@ -66,17 +66,15 @@
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
     <transform xil_pn:end_ts="1711654668" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1711654667">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1711654668" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-1756384680096438776" xil_pn:start_ts="1711654668">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1711655928" xil_pn:in_ck="2671605986464393439" xil_pn:name="TRANEXT_xstsynthesize_CPLD" xil_pn:prop_ck="-903265516819376272" xil_pn:start_ts="1711655921">
+    <transform xil_pn:end_ts="1713804574" xil_pn:in_ck="2671605986464393439" xil_pn:name="TRANEXT_xstsynthesize_CPLD" xil_pn:prop_ck="-903265516819376272" xil_pn:start_ts="1713804568">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name=".lso"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="controller.lso"/>
@@ -94,7 +92,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1711655934" xil_pn:in_ck="-4830158398200494646" xil_pn:name="TRAN_ngdbuild" xil_pn:prop_ck="1801237763891914866" xil_pn:start_ts="1711655928">
+    <transform xil_pn:end_ts="1713804578" xil_pn:in_ck="-4830158398200494646" xil_pn:name="TRAN_ngdbuild" xil_pn:prop_ck="1801237763891914866" xil_pn:start_ts="1713804574">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_ngo"/>
@@ -103,7 +101,7 @@
       <outfile xil_pn:name="controller.ngd"/>
       <outfile xil_pn:name="controller_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1711655943" xil_pn:in_ck="-4830158398200494645" xil_pn:name="TRANEXT_vm6File_xc9500" xil_pn:prop_ck="7642592302106193822" xil_pn:start_ts="1711655934">
+    <transform xil_pn:end_ts="1713804583" xil_pn:in_ck="-4830158398200494645" xil_pn:name="TRANEXT_vm6File_xc9500" xil_pn:prop_ck="7642592302106193822" xil_pn:start_ts="1713804578">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -121,7 +119,7 @@
       <outfile xil_pn:name="controller_html"/>
       <outfile xil_pn:name="controller_pad.csv"/>
     </transform>
-    <transform xil_pn:end_ts="1711655944" xil_pn:in_ck="-4830158398200485781" xil_pn:name="TRANEXT_crtProg_xc9500" xil_pn:prop_ck="-9204593535224376705" xil_pn:start_ts="1711655943">
+    <transform xil_pn:end_ts="1713804583" xil_pn:in_ck="-4830158398200485781" xil_pn:name="TRANEXT_crtProg_xc9500" xil_pn:prop_ck="-9204593535224376705" xil_pn:start_ts="1713804583">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="controller.jed"/>
