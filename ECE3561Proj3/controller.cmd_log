@@ -68,3 +68,14 @@ cpldfit -intstyle ise -p xc95*-*-* -ofmt vhdl -optimize speed -htmlrpt -loc on -
 XSLTProcess controller_build.xml 
 tsim -intstyle ise controller controller.nga 
 hprep6 -s IEEE1149 -n controller -i controller 
+xst -intstyle ise -ifn "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/controller.xst" -ofn "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc9500 controller.ngc controller.ngd  
+cpldfit -intstyle ise -p xc95*-*-* -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 36 -pterms 25 -power std -localfbk -pinfbk controller.ngd 
+XSLTProcess controller_build.xml 
+tsim -intstyle ise controller controller.nga 
+hprep6 -s IEEE1149 -n controller -i controller 
+xst -intstyle ise -ifn "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/controller.xst" -ofn "/home/gage/Documents/ECE3561Proj3/ECE3561Proj3/controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc9500 controller.ngc controller.ngd  
+cpldfit -intstyle ise -p xc95*-*-* -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 36 -pterms 25 -power std -localfbk -pinfbk controller.ngd 
+XSLTProcess controller_build.xml 
+tsim -intstyle ise controller controller.nga 
